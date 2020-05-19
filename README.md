@@ -1,30 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+# Nicolas' Portfolio Website
 
-## Getting Started
+![GitHub](https://img.shields.io/github/license/hniklass/nhweb)
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/hniklass/nhweb/next)
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/hniklass/nhweb/react)
+![GitHub package.json dependency version (prod)](https://img.shields.io/github/package-json/dependency-version/hniklass/nhweb/react-bootstrap)
+![GitHub package.json dependency version (dev dep on branch)](https://img.shields.io/github/package-json/dependency-version/hniklass/nhweb/dev/eslint-config-airbnb)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/hniklass/nhweb)
+![Website](https://img.shields.io/website?url=https://nicolashurtado.dev)
 
-First, run the development server:
+This repository holds the source code for [https://nicolashurtado.dev](https://nicolashurtado.dev)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Made with React-Bootstrap**
+- **SSG by Next.js**
+- **Powered by Strapi in Node.js**
