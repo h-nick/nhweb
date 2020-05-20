@@ -1,0 +1,47 @@
+@import './variables';
+
+:global {
+  /*
+    Min. font-size at 300px = 14px;
+    Max. font-size at 1600px = 26px;
+  */
+  body {
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    max-width: 1920px;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+  }
+
+  p, a, span, small, input, textarea, button {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .black {
+    color: $black;
+  }
+
+  .white {
+    color: $white;
+  }
+
+  .highlight {
+    color: $highlight;
+  }
+}
