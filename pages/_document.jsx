@@ -4,13 +4,21 @@ import Document, {
 } from 'next/document';
 
 class MyDocument extends Document {
+  constructor() {
+    super();
+
+    this.fontsLink = (
+      'https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro:wght@700&display=swap'
+    );
+  }
+
   render() {
     return (
       <Html>
         <Head lang="en">
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@700&display=swap"
+            href={this.fontsLink}
             rel="stylesheet"
           />
           <link
