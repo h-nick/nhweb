@@ -1,0 +1,146 @@
+@import '../styles/variables';
+
+.Top {
+  background-color: black;
+  height: 100vh;
+  position: relative;
+
+  .ContentWrapper {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+
+    @media (min-width: 992px) {
+      flex-direction: row;
+    }
+
+    .Content {
+      margin-top: 1rem;
+      text-align: center;
+      justify-self: center;
+
+      @media (min-width: 992px) {
+        text-align: left;
+        position: relative;
+        left: 5%;
+        margin-top: 0;
+      }
+    }
+  
+    .Image {
+      width: 300px;
+      height: 300px;
+      justify-self: center;
+  
+      @media (min-width: 450px) {
+        width: 350px;
+        height: 350px;
+      }
+
+      @media (min-width: 992px) {
+        position: absolute;
+        right: 5%;
+      }
+
+      @media (min-width: 1200px) {
+        width: 425px;
+        height: 425px;
+      }
+
+      @media (min-width: 1600px) {
+        width: 500px;
+        height: 500px;
+      }
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.Description {
+  margin: auto;
+
+  @media (min-width: 450px) {
+    width: 70%;
+  }
+}
+
+.Projects {
+  background-color: $black;
+
+  .Project {
+    margin: auto;
+    position: relative;
+    width: 100%;
+    height: 250px;
+
+    @media (min-width: 360px) {
+      min-width: 300px;
+      width: 50%;
+    }
+
+    @media (min-width: 992px) {
+      width: 90%;
+    }
+
+    &:hover {
+      .Cover {
+        opacity: 0.8;
+      }
+
+      .Data {
+        opacity: 1;
+      }
+    }
+
+    .Data {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 3;
+      opacity: 0;
+      transition: opacity 0.8s ease;
+      width: 100%;
+    }
+
+    .Image {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10%;
+      }
+    }
+
+    .Cover {
+      background-color: $blue;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      opacity: 0;
+      transition: opacity 0.8s ease;
+      border-radius: 10%;
+    }
+  }
+}
+
+/* .Blog {
+  .Post {
+
+  }
+} */
