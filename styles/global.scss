@@ -1,47 +1,54 @@
 @import './variables';
 
-:global {
-  /*
-    Min. font-size at 300px = 14px;
-    Max. font-size at 1600px = 26px;
-  */
-  body {
-    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-    max-width: 1920px;
+html, body {
+  font-size: 90%;
+  max-width: 1920px;
+  margin: auto;
+
+  @media (min-width: 360px) {
+    font-size: 100%;
   }
 
-  h1, h2, h3 {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 700;
+  @media (min-width: 1366px) {
+    font-size: 150%;
   }
+}
 
-  p, a, span, small, input, textarea, button {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-  }
+h1, h2, h3 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+}
 
-  h1 {
-    font-size: 3rem;
-  }
+p, a, span, small, input, textarea, button {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
 
-  h2 {
-    font-size: 2rem;
-  }
+.big-size {
+  font-size: 4.25rem;
+}
 
-  h3 {
-    font-size: 1.5rem;
-  }
+h1 {
+  font-size: 3rem;
+}
 
-  .black {
-    color: $black;
-  }
+h2 {
+  font-size: 2rem;
+}
 
-  .white {
-    color: $white;
-  }
+h3 {
+  font-size: 1.5rem;
+}
 
-  .highlight {
-    color: $highlight;
-  }
+.black {
+  color: $black;
+}
+
+.white {
+  color: $white;
+}
+
+.highlight {
+  color: $highlight;
 }
