@@ -5,28 +5,46 @@ html, body {
   max-width: 1920px;
   margin: auto;
 
-  @media (min-width: 360px) {
+  @media (min-width: 450px) {
     font-size: 100%;
   }
 
-  @media (min-width: 1366px) {
+  @media (min-width: 1200px) {
     font-size: 150%;
   }
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700;
+  color: $black;
 }
 
-p, a, span, small, input, textarea, button {
+h4 {
+  // Overwrites font-weight for h4!
+  font-weight: 600;
+}
+
+p, a, span, input, textarea, button, li, small {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1rem;
+  color: $black;
+}
+
+small {
+  // Overwrites font-size for small!
+  font-size: 0.5rem;
 }
 
 .big-size {
-  font-size: 4.25rem;
+  font-size: 3.75rem;
+  margin: 0;
+  line-height: 1;
+
+  @media (min-width: 450px) {
+    font-size: 4.25rem;
+  }
 }
 
 h1 {
@@ -41,8 +59,8 @@ h3 {
   font-size: 1.5rem;
 }
 
-.black {
-  color: $black;
+h4 {
+  font-size: 1.25rem;
 }
 
 .white {

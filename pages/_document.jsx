@@ -8,7 +8,7 @@ class MyDocument extends Document {
     super();
 
     this.fontsLink = (
-      'https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro:wght@700&display=swap'
+      'https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+Pro:wght@600;700&display=swap'
     );
   }
 
