@@ -127,7 +127,7 @@
     }
 
     .Cover {
-      background-color: $blue;
+      background-color: $black;
       position: absolute;
       width: 100%;
       height: 100%;
@@ -139,8 +139,73 @@
   }
 }
 
-/* .Blog {
+.Blog {
   .Post {
+    &:hover {
+      text-decoration: none;
 
+      .Image {
+        filter: grayscale(0%);
+      }
+    }
+
+    .Image {
+      margin: auto;
+      width: 80%;
+      height: 350px;
+      filter: grayscale(100%);
+      transition: filter 0.8s ease;
+
+      @media (min-width: 360px) {
+        min-width: 300px;
+        width: 35%;
+      }
+
+      @media (min-width: 1200px) {
+        min-width: 0;
+        width: 80%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
-} */
+}
+
+.Contact {
+  position: relative;
+  height: 80vh;
+  min-height: 500px;
+  max-height: 600px;
+  
+  .Cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: $black;
+    opacity: 0.8;
+    z-index: 2;
+    top: 0;
+    left: 0;
+  }
+
+  .Image {
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .Container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+  }
+}

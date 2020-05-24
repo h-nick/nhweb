@@ -8,7 +8,7 @@ const Home = () => (
     <div className={classes.Top}>
       <div className={classes.ContentWrapper}>
         <div className={classes.Image}>
-          <img src="https://via.placeholder.com/150" alt="" />
+          <img src="https://picsum.photos/200" alt="" />
         </div>
 
         <div className={classes.Content}>
@@ -153,7 +153,7 @@ const Home = () => (
 
     <div className={classes.Projects}>
       <Container className="py-5">
-        <h2 className="white text-center">Check out some of my most recent projects</h2>
+        <h2 className="highlight-variation text-center">Check out some of my most recent projects</h2>
 
         <p className="px-md-5 white text-center">
           Nowadays I mostly work on webdev, but I&apos;ve done my fair share of other project.
@@ -171,7 +171,7 @@ const Home = () => (
               </div>
               <div className={classes.Cover} />
               <div className={classes.Image}>
-                <img src="https://via.placeholder.com/150" alt="" />
+                <img src="https://picsum.photos/200" alt="" />
               </div>
             </div>
           </Col>
@@ -184,7 +184,7 @@ const Home = () => (
               </div>
               <div className={classes.Cover} />
               <div className={classes.Image}>
-                <img src="https://via.placeholder.com/150" alt="" />
+                <img src="https://picsum.photos/200" alt="" />
               </div>
             </div>
           </Col>
@@ -197,7 +197,7 @@ const Home = () => (
               </div>
               <div className={classes.Cover} />
               <div className={classes.Image}>
-                <img src="https://via.placeholder.com/150" alt="" />
+                <img src="https://picsum.photos/200" alt="" />
               </div>
             </div>
           </Col>
@@ -207,29 +207,75 @@ const Home = () => (
       </Container>
     </div>
 
-    {/*
-    TODO:
     <Container className={clsx(classes.Blog, 'py-5')}>
       <h2 className="text-center">My latest posts</h2>
 
-      <Row>
+      <Row className="mt-5">
         <Col xs={12} xl={4}>
           <a href="#." className={classes.Post}>
             <div className={classes.Image}>
-              <img src="https://via.placeholder.com/150" alt="" />
+              <img src="https://picsum.photos/200" alt="" />
             </div>
 
-            <div className={classes.Data}>
-              <p className={clsx(classes.Category, 'highlight')}>TEST CATEGORY</p>
-              <p clasName={clsx(classes.PostName)}>TEST NAME</p>
+            <div className={clsx(classes.Data, 'mt-4')}>
+              <small className="highlight text-center d-block">TEST CATEGORY</small>
+              <p className="text-center d-block">TEST SHORT NAME</p>
+            </div>
+          </a>
+        </Col>
+
+        <Col xs={12} xl={4} className="mt-4 mt-xl-0 d-none d-md-block">
+          <a href="#." className={classes.Post}>
+            <div className={classes.Image}>
+              <img src="https://picsum.photos/200" alt="" />
+            </div>
+
+            <div className={clsx(classes.Data, 'mt-4')}>
+              <small className="highlight text-center d-block">TEST CATEGORY</small>
+              <p className="text-center d-block">TEST VERY LONG LONG NAME</p>
+            </div>
+          </a>
+        </Col>
+
+        <Col xs={12} xl={4} className="mt-4 mt-xl-0 d-none d-xl-block">
+          <a href="#." className={classes.Post}>
+            <div className={classes.Image}>
+              <img src="https://picsum.photos/200" alt="" />
+            </div>
+
+            <div className={clsx(classes.Data, 'mt-4')}>
+              <small className="highlight text-center d-block">TEST CATEGORY</small>
+              <p className="text-center d-block">TEST LONG LONG NAME</p>
             </div>
           </a>
         </Col>
       </Row>
-    </Container> */}
 
-    {/* TODO: MOVE TO OWN COMPONENT */}
-    {/* <div className={classes.Contact} /> */}
+      <button type="button" className="d-block mx-auto mt-3">PLACEHOLDER</button>
+    </Container>
+
+    <div className={classes.Contact}>
+      <div className={classes.Image}>
+        <img src="https://picsum.photos/200" alt="" />
+      </div>
+
+      <div className={classes.Cover} />
+
+      <Container className={clsx(classes.Container, 'py-5')}>
+        <Row>
+          <Col>
+            <h2 className="text-center highlight-variation">Need to contact me? Send me a message!</h2>
+
+            <h3 className="text-center white px-md-5 my-3">
+              Send me a message and I&apos;ll get back to you as soon as possible.
+              Whether it is to say hello, ask for a quote, an inquiry or anything else.
+            </h3>
+          </Col>
+        </Row>
+
+        <button type="button" className="d-block mx-auto mt-3">PLACEHOLDER</button>
+      </Container>
+    </div>
 
 
   </>
