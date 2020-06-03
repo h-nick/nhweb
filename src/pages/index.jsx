@@ -3,7 +3,7 @@ import axios from 'axios';
 import clsx from 'clsx';
 import { Container, Row, Col } from 'react-bootstrap';
 import moment from 'moment';
-import apiInstance from '../src/utils/api-instance';
+import apiInstance from '../utils/api-instance';
 import classes from './index.module.scss';
 
 const Home = () => {
