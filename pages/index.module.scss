@@ -31,6 +31,10 @@
         left: 5%;
         margin-top: 0;
       }
+
+      @media (min-width: 1200px) {
+        left: 8%;
+      }
     }
   
     .Image {
@@ -46,6 +50,10 @@
       @media (min-width: 992px) {
         position: absolute;
         right: 5%;
+      }
+
+      @media (min-width: 1200px) {
+        right: 8%;
       }
 
       @media (min-width: 1200px) {
