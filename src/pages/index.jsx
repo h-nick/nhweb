@@ -60,7 +60,7 @@ const Home = () => {
         </div>
       </div>
 
-      <Container className={clsx(classes.Description, 'mt-5')}>
+      <Container className={clsx(classes.Description, 'my-5 py-5')}>
         <Row>
           <Col>
             <h3 className="px-md-5 text-center">
@@ -72,7 +72,7 @@ const Home = () => {
         </Row>
       </Container>
 
-      <Container className={clsx(classes.MidPart, 'my-5')}>
+      <Container className={classes.MidPart}>
         <Row>
           <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }}>
             <div className={clsx(classes.SkillsAndEducation, 'pr-md-5')}>
@@ -176,7 +176,7 @@ const Home = () => {
         </Row>
       </Container>
 
-      <div className={classes.Projects}>
+      <div className={clsx(classes.Projects, 'my-5')}>
         <Container className="py-5">
           <h2 className="highlight-variation text-center">Check out some of my most recent projects</h2>
 
@@ -286,7 +286,7 @@ const Home = () => {
         }
       </Container>
 
-      <div className={classes.Contact}>
+      <div className={clsx(classes.Contact, 'mt-5')}>
         <div className={classes.Image}>
           <img src="https://picsum.photos/200" alt="" />
         </div>
