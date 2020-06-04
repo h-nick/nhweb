@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import clsx from 'clsx';
 import { Container, Row, Col } from 'react-bootstrap';
-import moment from 'moment';
 import apiInstance from '../../utils/api-instance';
 import ProjectBlock from '../../components/project-block/project-block';
 import classes from './index.module.scss';
@@ -13,9 +10,14 @@ const Projects = () => {
 
   useEffect(() => {
     (async () => {
-      await axios.get('/projects')
-        .then((response) => setProjects(response.data))
-        .catch(() => setLoading(false));
+      await apiInstance.get('/projects')
+        .then((response) => {
+          setProjects(response.data);
+          setLoading(false);
+        })
+        .catch(() => {
+          setLoading(false);
+        });
     })();
   }, []);
 
@@ -44,8 +46,18 @@ const Projects = () => {
         </Row>
       </Container>
 
-      <Container>
+      <Container className="mb-5">
         <Row>
+          {
+            !loading && (!projects || !projects.length) && (
+              <Col>
+                <h3 className="text-center">
+                  Apparently there are no projects published :(
+                </h3>
+              </Col>
+            )
+          }
+
           {
             /* eslint-disable no-nested-ternary */
             /* ESlint rule disabled for simplicity */
@@ -55,12 +67,18 @@ const Projects = () => {
               I think it's better than wasting time splitting the array
               and generating new rows.
             */
-            [0, 1, 2, 3, 4, 5, 6, 7].map((_, index) => (
+          }
+
+          {
+            !loading
+            && projects
+            && projects.length > 0
+            && projects.map((project, index) => (
               <Col xs={12} md={6} lg={4}>
                 <ProjectBlock
-                  title="TÍTULO"
-                  slug=""
-                  mainPhoto="https://picsum.photos/200"
+                  title={project.title}
+                  slug={project.slug}
+                  mainPhoto={project.main_photo}
                   className={
                     `${index !== 0 && index === 1
                       ? 'mt-4 mt-md-0'
