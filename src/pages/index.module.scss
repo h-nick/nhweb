@@ -86,71 +86,14 @@
 
 .Projects {
   background-color: $black;
-
-  .Project {
-    margin: auto;
-    position: relative;
-    width: 100%;
-    height: 250px;
-
-    @media (min-width: 360px) {
-      min-width: 300px;
-      width: 50%;
-    }
-
-    @media (min-width: 992px) {
-      width: 90%;
-    }
-
-    &:hover {
-      .Cover {
-        opacity: 0.8;
-      }
-
-      .Data {
-        opacity: 1;
-      }
-    }
-
-    .Data {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 3;
-      opacity: 0;
-      transition: opacity 0.8s ease;
-      width: 100%;
-    }
-
-    .Image {
-      position: relative;
-      width: 100%;
-      height: 100%;
-
-      img {
-        width: 100%;
-        height: 100%;
-        border-radius: 10%;
-      }
-    }
-
-    .Cover {
-      background-color: $black;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: 2;
-      opacity: 0;
-      transition: opacity 0.8s ease;
-      border-radius: 10%;
-    }
-  }
 }
 
 .Blog {
   .Post {
     &:hover {
-      text-decoration: none;
+      a {
+        text-decoration: none;
+      }
 
       .Image {
         filter: grayscale(0%);
@@ -159,19 +102,14 @@
 
     .Image {
       margin: auto;
-      width: 80%;
-      height: 350px;
+      width: 275px;
+      height: 325px;
       filter: grayscale(100%);
       transition: filter 0.8s ease;
 
-      @media (min-width: 360px) {
-        min-width: 300px;
-        width: 35%;
-      }
-
       @media (min-width: 1200px) {
-        min-width: 0;
-        width: 80%;
+        width: 100%;
+        height: 400px;
       }
 
       img {

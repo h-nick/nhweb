@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import clsx from 'clsx';
-import { Container, Row, Col } from 'react-bootstrap';
 import moment from 'moment';
+import { Container, Row, Col } from 'react-bootstrap';
 import apiInstance from '../utils/api-instance';
+import ProjectBlock from '../components/project-block/project-block';
 import classes from './index.module.scss';
 
 const Home = () => {
@@ -186,7 +187,7 @@ const Home = () => {
             on my github page.
           </p>
 
-          <Row className="my-5">
+          <Row className="mt-5 justify-content-center">
             {
               !loading && (!latestProjects || !latestProjects.length) && (
                 <Col>
@@ -201,38 +202,45 @@ const Home = () => {
               !loading
               && latestProjects
               && latestProjects.length > 0
-              && latestProjects.map((project) => (
-                <Col xs={12} lg={4}>
-                  <div className={classes.Project}>
-                    <div className={classes.Data}>
-                      <h4 className="white text-center m-0">{project.title}</h4>
-                      <button type="button" className="mt-2 mx-auto d-block text-center">
-                        PLACEHOLDER
-                      </button>
-                    </div>
-                    <div className={classes.Cover} />
-                    <div className={classes.Image}>
-                      <img src={project.main_photo} alt={project.slug} />
-                    </div>
-                  </div>
+              && latestProjects.map((project, index) => (
+                <Col xs={12} md={6} lg={4}>
+                  <ProjectBlock
+                    title={project.title}
+                    slug={project.slug}
+                    mainPhoto={project.main_photo}
+                    className={
+                      `${index > 0 ? 'mt-4 mt-md-0' : ''}${index > 1 ? ' d-none d-lg-block' : ''}`
+                    }
+                  />
                 </Col>
               ))
             }
-
-            {
-              !loading
-              && latestProjects
-              && latestProjects.length > 0
-              && <button type="button" className="d-block mx-auto">PLACEHOLDER</button>
-            }
           </Row>
+
+          {
+            !loading
+            && latestProjects
+            && latestProjects.length > 0
+            && <button type="button" className="d-block mt-3 mx-auto">PLACEHOLDER</button>
+          }
         </Container>
       </div>
 
       <Container className={clsx(classes.Blog, 'py-5')}>
         <h2 className="text-center">My latest posts</h2>
 
-        <Row className="mt-5">
+        <p className="px-md-5 text-center">
+          Nowadays I mostly work on webdev, but I&apos;ve done my fair share of other project.
+          The most recent ones shown here. Filler text Filler text Filler text.
+          There are also some vanity projects not shown here that can be found
+          on my github page.
+        </p>
+
+        <Row className="mt-5 justify-content-center">
+          {/*
+            TODO: Fix blog dynamic data based on Dev.to API fetched object.
+          */}
+
           {
             !loading && (!latestPosts || !latestPosts.length) && (
               <Col>
@@ -247,18 +255,24 @@ const Home = () => {
             !loading
             && latestPosts
             && latestPosts.length > 0
-            && latestPosts.map((post) => (
-              <Col xs={12} xl={4}>
-                <a href="#." className={classes.Post}>
-                  <div className={classes.Image}>
-                    <img src="https://picsum.photos/200" alt="" />
-                  </div>
+            && latestPosts.map((post, index) => (
+              <Col xs={12} md={6} lg={4}>
+                <div
+                  className={
+                    clsx(classes.Post, index > 0 && 'mt-4 mt-md-0', index > 1 && 'd-none d-lg-block')
+                  }
+                >
+                  <a href="#.">
+                    <div className={classes.Image}>
+                      <img src="https://picsum.photos/200" alt="" />
+                    </div>
 
-                  <div className={clsx(classes.Data, 'mt-4')}>
-                    <small className="highlight text-center d-block">TEST CATEGORY</small>
-                    <p className="text-center d-block">TEST SHORT NAME</p>
-                  </div>
-                </a>
+                    <div className={clsx(classes.Data, 'mt-4')}>
+                      <small className="highlight text-center d-block">TEST CATEGORY</small>
+                      <p className="text-center d-block">TEST SHORT NAME</p>
+                    </div>
+                  </a>
+                </div>
               </Col>
             ))
           }
