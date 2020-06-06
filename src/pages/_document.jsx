@@ -27,6 +27,7 @@ class MyDocument extends Document {
             crossOrigin="anonymous"
             rel="stylesheet"
           />
+          <link rel="icon" href="/favicon.ico" />
         </Head>
 
         <body>
