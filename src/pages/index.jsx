@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import moment from 'moment';
 import { Container, Row, Col } from 'react-bootstrap';
 import apiInstance from '../utils/api-instance';
+import Footer from '../components/footer/footer';
 import Navbar from '../components/navbar/navbar';
 import ProjectBlock from '../components/project-block/project-block';
 import classes from './index.module.scss';
@@ -318,7 +319,7 @@ const Home = () => {
         </Container>
       </div>
 
-
+      <Footer />
     </>
   );
 };

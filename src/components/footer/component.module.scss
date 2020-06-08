@@ -1,0 +1,93 @@
+@import '../../styles/variables';
+
+.Footer {
+  background-color: $very-black;
+
+  .ImgWrapper {
+    display: none;
+
+    @media (min-width: 992px) {
+      display: block;
+      margin: auto;
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .LinksWrapper {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: 992px) {
+      justify-content: flex-start;
+    }
+
+    .Links {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      line-height: 1.5;
+
+      &:nth-child(1) {
+        text-align: right;
+      }
+
+      @media (min-width: 768px) {
+        display: inline;
+        width: auto;
+        line-height: 0;
+
+        &:nth-child(1) {
+          text-align: left;
+        }
+      }
+
+      a {
+        color: $white !important;
+        text-decoration: none;
+        font-size: 1rem;
+  
+        @media (min-width: 992px) {
+          font-size: 0.8rem;
+        }
+        
+        &:hover {
+          color: $amber !important;
+    
+          svg {
+            path {
+              color: $amber;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .Copyright {
+    span {
+      display: block;
+      line-height: 1;
+    }
+
+    span, a {
+      font-size: 1rem;
+
+      @media (min-width: 992px) {
+        font-size: 0.8rem;
+      }
+    }
+
+    a {
+      text-decoration: underline;
+      text-decoration-color: $gold;
+
+      &:hover {
+        color: $gold;
+      }
+    }
+  }
+}
