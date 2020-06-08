@@ -18,6 +18,13 @@ h1, h2, h3, h4, small {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 700;
   color: $black;
+  transition: color 0.8s ease;
+}
+
+svg {
+  path {
+    transition: color 0.8s ease;
+  }
 }
 
 h4 {
@@ -30,6 +37,7 @@ p, a, span, input, textarea, button, li, small {
   font-weight: 400;
   font-size: 1rem;
   color: $black;
+  transition: color 0.8s ease;
 }
 
 small {
