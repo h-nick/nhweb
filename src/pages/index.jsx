@@ -157,10 +157,10 @@ const Home = () => {
               {
                 !loading && workExp && workExp.length && workExp.slice(0, 3).map((experience) => (
                   <div key={experience.id} className={clsx(classes.Work, 'my-4')}>
-                    <h3>{experience.position}</h3>
-                    <h4>{experience.name}</h4>
-                    <p className="m-0">{`${experience.location}`}</p>
-                    <p>
+                    <h3 className="text-center text-md-left">{experience.position}</h3>
+                    <h4 className="text-center text-md-left">{experience.name}</h4>
+                    <p className="m-0 text-center text-md-left">{`${experience.location}`}</p>
+                    <p className="text-center text-md-left">
                       {
                         `(${moment(experience.start_date).format('YYYY/MM')} - `
                         + `${experience.current
