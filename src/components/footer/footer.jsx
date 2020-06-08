@@ -15,7 +15,7 @@ const Footer = () => (
   <div className={classes.Footer}>
     <Container className="px-5 py-5">
       <Row className="align-items-center">
-        <Col xs={12} lg={{ span: 2, offset: 2 }} className="">
+        <Col xs={12} lg={{ span: 2, offset: 1 }} className="">
           <div className={classes.ImgWrapper}>
             <a href="/">
               <img src="/images/logo_amber.png" alt="Website logo" />
