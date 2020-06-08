@@ -48,6 +48,10 @@ const Home = () => {
 
         <div className={classes.Cover} />
 
+        <div className={classes.BgImg}>
+          <img src="https://picsum.photos/200" alt="" />
+        </div>
+
         <div className={classes.ContentWrapper}>
           <div className={classes.Image}>
             <img src="https://picsum.photos/200" alt="" />
