@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import moment from 'moment';
 import { Container, Row, Col } from 'react-bootstrap';
 import apiInstance from '../utils/api-instance';
+import Navbar from '../components/navbar/navbar';
 import ProjectBlock from '../components/project-block/project-block';
 import classes from './index.module.scss';
 
@@ -43,6 +44,10 @@ const Home = () => {
   return (
     <>
       <div className={classes.Top}>
+        <Navbar />
+
+        <div className={classes.Cover} />
+
         <div className={classes.ContentWrapper}>
           <div className={classes.Image}>
             <img src="https://picsum.photos/200" alt="" />

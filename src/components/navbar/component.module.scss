@@ -1,0 +1,61 @@
+@import '../../styles/variables';
+
+.Navbar {
+  position: relative;
+  z-index: 9;
+  background-color: $navbar-bg;
+  
+  .Logo {
+    max-width: 80px;
+
+    &:hover {
+      img {
+        transition: filter 0.8s ease;
+
+        filter: 
+        brightness(0) saturate(100%) invert(60%) sepia(82%)
+        saturate(1387%) hue-rotate(9deg) brightness(102%) contrast(102%);
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .Button {
+    background-color: white;
+  }
+
+  /*
+    !important used to overwrite styles in components generated dynamically by react-bootstrap.
+  */
+  a {
+    color: $white !important;
+    
+    &:hover {
+      color: $amber !important;
+
+      svg {
+        path {
+          color: $amber;
+        }
+      }
+    }
+  }
+
+  .SocialNetworks {
+    a {
+      width: 1rem;
+      position: relative;
+
+      svg {
+        font-size: 1.4rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
