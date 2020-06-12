@@ -8,7 +8,7 @@ const ProjectBlock = ({
 }) => (
   <div className={clsx(classes.Project, className)}>
     <div className={classes.Data}>
-      <h4 className="white text-center m-0">{title}</h4>
+      <h4 className="white text-center m-0 px-2">{title}</h4>
       <button type="button" className="mt-2 mx-auto d-block text-center">
         PLACEHOLDER
       </button>
@@ -17,7 +17,7 @@ const ProjectBlock = ({
     <div className={classes.Cover} />
 
     <div className={classes.Image}>
-      <img src={mainPhoto} alt={slug} />
+      <img src={`https://api.nicolashurtado.dev${mainPhoto}`} alt={slug} />
     </div>
   </div>
 );
