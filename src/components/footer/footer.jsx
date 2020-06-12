@@ -1,7 +1,5 @@
 import React from 'react';
 import clsx from 'clsx';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faDev } from '@fortawesome/free-brands-svg-icons';
 import Link from 'next/link';
 import { Container, Row, Col } from 'react-bootstrap';
 import classes from './component.module.scss';
