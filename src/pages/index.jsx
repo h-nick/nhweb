@@ -5,6 +5,7 @@ import moment from 'moment';
 import { Container, Row, Col } from 'react-bootstrap';
 import apiInstance from '../utils/api-instance';
 import Footer from '../components/footer/footer';
+import LoaderError from '../components/loader-error/loader-error';
 import Navbar from '../components/navbar/navbar';
 import ProjectBlock from '../components/project-block/project-block';
 import classes from './index.module.scss';
@@ -16,6 +17,7 @@ const Home = () => {
   const [latestProjects, setLatestProjects] = useState(undefined);
   const [latestPosts, setLatestPosts] = useState(undefined);
   const [loading, setLoading] = useState(true);
+  const [loadingError, setLoadingError] = useState(false);
 
   useEffect(() => {
     (async () => {
@@ -34,16 +36,22 @@ const Home = () => {
             setLatestProjects(fetchedProjects.data);
             setLatestPosts(fetchedPosts.data);
             setLoading(false);
+            setLoadingError(false);
           },
         ))
         .catch(() => {
           setLoading(false);
+          setLoadingError(true);
         });
     })();
   }, []);
 
   return (
     <>
+      {
+        loadingError && <LoaderError />
+      }
+
       <div className={classes.Top}>
         <Navbar />
 

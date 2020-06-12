@@ -1,0 +1,14 @@
+.LoaderError {
+  background-color: red;
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      color: none;
+    }
+  }
+}
