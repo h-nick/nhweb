@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import apiInstance from '../../utils/api-instance';
+import Navbar from '../../components/navbar/navbar';
 import ProjectBlock from '../../components/project-block/project-block';
 import classes from './index.module.scss';
 
@@ -23,6 +24,8 @@ const Projects = () => {
 
   return (
     <>
+      <Navbar />
+
       <div className={classes.Top}>
         <div className={classes.Content}>
           <h1 className="highlight-variation big-size">Some projects</h1>
