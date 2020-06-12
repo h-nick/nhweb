@@ -23,7 +23,7 @@ const Home = () => {
         apiInstance.get('/skillsets'),
         apiInstance.get('/experiences?_limit=3&_sort=current:desc,start_date:desc,end_date:desc'),
         apiInstance.get('/resumes?_limit=1'),
-        apiInstance.get('/projects?_limit=3'),
+        apiInstance.get('/projects?_limit=3&_sort=id:DESC'),
         axios.get('https://dev.to/api/articles?username=hniklass?per_page=3'),
       ])
         .then(axios.spread(
@@ -213,11 +213,11 @@ const Home = () => {
               && latestProjects
               && latestProjects.length > 0
               && latestProjects.map((project, index) => (
-                <Col xs={12} md={6} lg={4}>
+                <Col xs={12} md={6} lg={4} key={project.id}>
                   <ProjectBlock
                     title={project.title}
                     slug={project.slug}
-                    mainPhoto={project.main_photo}
+                    mainPhoto={project.main_photo.url}
                     className={
                       `${index > 0 ? 'mt-4 mt-md-0' : ''}${index > 1 ? ' d-none d-lg-block' : ''}`
                     }

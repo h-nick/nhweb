@@ -11,7 +11,7 @@ const Projects = () => {
 
   useEffect(() => {
     (async () => {
-      await apiInstance.get('/projects')
+      await apiInstance.get('/projects?_sort=id:DESC')
         .then((response) => {
           setProjects(response.data);
           setLoading(false);
@@ -77,11 +77,11 @@ const Projects = () => {
             && projects
             && projects.length > 0
             && projects.map((project, index) => (
-              <Col xs={12} md={6} lg={4}>
+              <Col xs={12} md={6} lg={4} key={project.id}>
                 <ProjectBlock
                   title={project.title}
                   slug={project.slug}
-                  mainPhoto={project.main_photo}
+                  mainPhoto={project.main_photo.url}
                   className={
                     `${index !== 0 && index === 1
                       ? 'mt-4 mt-md-0'
