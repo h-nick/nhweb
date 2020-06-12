@@ -27,6 +27,10 @@ svg {
   }
 }
 
+img {
+  transition: filter 0.8s ease;
+}
+
 h4 {
   // Overwrites font-weight for h4!
   font-weight: 600;

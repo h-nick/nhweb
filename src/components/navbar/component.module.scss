@@ -10,8 +10,6 @@
 
     &:hover {
       img {
-        transition: filter 0.8s ease;
-
         filter: 
         brightness(0) saturate(100%) invert(60%) sepia(82%)
         saturate(1387%) hue-rotate(9deg) brightness(102%) contrast(102%);
