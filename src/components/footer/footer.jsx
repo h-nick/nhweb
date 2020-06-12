@@ -60,15 +60,15 @@ const Footer = () => (
           </div>
 
           <div className={clsx(classes.Copyright, 'text-center text-lg-left')}>
-            <span className="highlight">
+            <span className="highlight-variation">
               © 2019 Nicolas Hurtado
             </span>
 
-            <span className="highlight">
+            <span className="highlight-variation">
               Repository available on
               {' '}
               <a
-                className="highlight"
+                className="highlight-variation"
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://github.com/hniklass/nhweb"
