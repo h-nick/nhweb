@@ -55,7 +55,7 @@ const Home = () => {
 
         <div className={classes.ContentWrapper}>
           <div className={classes.Image}>
-            <img src="https://picsum.photos/200" alt="" />
+            <img src="/images/profile.jpg" alt="Nicolas" />
           </div>
 
           <div className={classes.Content}>
