@@ -57,8 +57,11 @@ const Home = () => {
 
         <div className={classes.Cover} />
 
-        <div className={classes.BgImg}>
-          <img src="https://picsum.photos/200" alt="" />
+        <div className={classes.BgVideo}>
+          <video autoPlay muted loop>
+            <source src="/videos/video.webm" type="video/webm" />
+            <source src="/videos/video.mp4" type="video/mp4" />
+          </video>
         </div>
 
         <div className={classes.ContentWrapper}>
@@ -306,7 +309,7 @@ const Home = () => {
 
       <div className={clsx(classes.Contact, 'mt-5')}>
         <div className={classes.Image}>
-          <img src="https://picsum.photos/200" alt="" />
+          <img src="/images/contact_bg.jpg" alt="" />
         </div>
 
         <div className={classes.Cover} />
