@@ -24,9 +24,9 @@ const Projects = () => {
 
   return (
     <>
-      <Navbar />
-
       <div className={classes.Top}>
+        <Navbar />
+
         <div className={classes.Content}>
           <h1 className="highlight-variation big-size">Some projects</h1>
           <h1 className="white big-size">I&apos;ve worked on</h1>
