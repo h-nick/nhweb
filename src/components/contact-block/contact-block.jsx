@@ -5,10 +5,6 @@ import classes from './component.module.scss';
 
 const ContactBlock = () => (
   <div className={clsx(classes.Contact, 'mt-5')}>
-    <div className={classes.Image}>
-      <img src="/images/contact_bg.jpg" alt="" />
-    </div>
-
     <div className={classes.Cover} />
 
     <Container className={clsx(classes.Container, 'py-5')}>
