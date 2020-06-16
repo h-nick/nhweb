@@ -14,8 +14,8 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
-        <Head lang="en">
+      <Html lang="en">
+        <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link
             href={this.fontsLink}
@@ -33,6 +33,7 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script src="/modernizr.js" type="text/javascript" />
         </body>
       </Html>
     );
