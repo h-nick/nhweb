@@ -31,13 +31,19 @@
   */
   a {
     color: $white !important;
+
+    svg {
+      path {
+        fill: $white;
+      }
+    }
     
     &:hover {
       color: $amber !important;
 
       svg {
         path {
-          color: $amber;
+          fill: $amber;
         }
       }
     }
