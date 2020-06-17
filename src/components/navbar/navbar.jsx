@@ -50,9 +50,9 @@ const Navbar = () => (
 
     <BootstrapNavbar.Collapse id="basic-BootstrapNavbar-nav">
       <Nav className="pl-3 pl-sm-5 ml-sm-auto">
-        <Link href="/" passHref><Nav.Link className="mr-2">Site Home</Nav.Link></Link>
-        <Link href="/projects" passHref><Nav.Link className="mr-2">All Projects</Nav.Link></Link>
-        <Link href="/contact" passHref><Nav.Link>Contact Me</Nav.Link></Link>
+        <Link href="/" passHref><Nav.Link className="mr-2">HOME</Nav.Link></Link>
+        <Link href="/projects" passHref><Nav.Link className="mr-2">PROJECTS</Nav.Link></Link>
+        <Link href="/contact" passHref><Nav.Link>CONTACT</Nav.Link></Link>
       </Nav>
     </BootstrapNavbar.Collapse>
   </BootstrapNavbar>
