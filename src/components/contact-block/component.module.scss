@@ -45,4 +45,12 @@
     transform: translate(-50%, -50%);
     z-index: 3;
   }
+
+  .Button {
+    width: 275px;
+
+    @media (min-width: 992px) {
+      width: 30%;
+    }
+  }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import { Container, Row, Col } from 'react-bootstrap';
+import Button from '../button/button';
 import classes from './component.module.scss';
 
 const ContactBlock = () => (
@@ -19,7 +20,11 @@ const ContactBlock = () => (
         </Col>
       </Row>
 
-      <button type="button" className="d-block mx-auto mt-3">PLACEHOLDER</button>
+      <Button
+        className={clsx(classes.Button, 'mt-3 mx-auto')}
+        href="/contact"
+        title="CONTACT ME"
+      />
     </Container>
   </div>
 );
