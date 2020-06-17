@@ -4,6 +4,7 @@ import clsx from 'clsx';
 import moment from 'moment';
 import { Container, Row, Col } from 'react-bootstrap';
 import apiInstance from '../utils/api-instance';
+import Button from '../components/button/button';
 import ContactBlock from '../components/contact-block/contact-block';
 import Footer from '../components/footer/footer';
 import LoaderError from '../components/loader-error/loader-error';
@@ -74,9 +75,9 @@ const Home = () => {
             <h1 className="highlight-variation big-size">Hello!</h1>
             <h1 className="white big-size">I am Nicolas</h1>
 
-            <div>
-              <button type="button">PLACEHOLDER</button>
-              <button type="button">PLACEHOLDER</button>
+            <div className={classes.Buttons}>
+              <Button href="/contact" title="CONTACT ME" />
+              <Button href="" title="GET RESUME" />
             </div>
           </div>
         </div>
@@ -243,7 +244,13 @@ const Home = () => {
             !loading
             && latestProjects
             && latestProjects.length > 0
-            && <button type="button" className="d-block mt-3 mx-auto">PLACEHOLDER</button>
+            && (
+              <Button
+                className={clsx(classes.SectionButton, 'mt-4 mx-auto')}
+                href="/projects"
+                title="ALL MY PROJECTS"
+              />
+            )
           }
         </Container>
       </div>
@@ -304,7 +311,14 @@ const Home = () => {
           !loading
           && latestPosts
           && latestPosts.length > 0
-          && <button type="button" className="d-block mx-auto mt-3">PLACEHOLDER</button>
+          && (
+            <Button
+              className={clsx(classes.SectionButton, 'mt-4 mx-auto')}
+              href="/projects"
+              title="MY DEV.TO PROFILE"
+              blackVariation
+            />
+          )
         }
       </Container>
 

@@ -98,6 +98,16 @@
       }
     }
   }
+
+  .Buttons {
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 5px;
+
+    a {
+      margin-right: 1rem;
+    }
+  }
 }
 
 .Description {
@@ -109,7 +119,7 @@
 }
 
 .Projects {
-  background-color: $black;
+  background-color: $very-black;
 }
 
 .Blog {
@@ -141,5 +151,13 @@
         height: 100%;
       }
     }
+  }
+}
+
+.SectionButton {
+  width: 275px;
+
+  @media (min-width: 992px) {
+    width: 30%;
   }
 }
