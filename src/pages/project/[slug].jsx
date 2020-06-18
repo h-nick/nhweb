@@ -74,6 +74,13 @@ export async function getServerSideProps(ctx) {
 
   const data = (await apiInstance.get(`/projects?slug=${slug}`)).data[0];
 
+  if (!data) {
+    ctx.res.statusCode = 404;
+    ctx.res.end();
+    return;
+  }
+
+  /* eslint-disable-next-line consistent-return */
   return {
     props: data,
   };
