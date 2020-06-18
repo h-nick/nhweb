@@ -1,0 +1,51 @@
+@import '../../styles/variables';
+
+.LoaderAnimation {
+  position: absolute;
+  top: calc(50% - 7vmin);
+  left: calc(50% - 7vmin);
+  animation: spin 5s infinite linear;
+  border: solid 2vmin transparent;
+  border-radius: 50%;
+  border-right-color: $blue;
+  border-top-color: $blue;
+  box-sizing: border-box;
+  height: 14vmin;
+  width: 14vmin;
+
+  &:before {
+    content: "";
+    animation: spin 3s infinite linear;
+    border: solid 2vmin transparent;
+    border-radius: 50%;
+    border-right-color: $amber;
+    border-top-color: $amber;
+    box-sizing: border-box;
+    height: 10vmin;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 10vmin;
+  }
+
+  &:after {
+    content: "";
+    animation: spin 1s infinite linear;
+    border: solid 2vmin transparent;
+    border-radius: 50%;
+    border-right-color: $gold;
+    border-top-color: $gold;
+    box-sizing: border-box;
+    height: 6vmin;
+    left: 2vmin;
+    position: absolute;
+    top: 2vmin;
+    width: 6vmin;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(-360deg);
+  }
+}

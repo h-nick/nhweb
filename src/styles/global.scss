@@ -1,5 +1,11 @@
 @import './variables';
 
+.loader-bg {
+  height: 100vh;
+  background-color: $very-black;
+  position: relative;
+}
+
 html, body {
   font-size: 90%;
   max-width: 1920px;
