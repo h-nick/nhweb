@@ -1,0 +1,49 @@
+@import '../../styles/variables';
+
+.Top {
+  background-color: black;
+  height: 100vh;
+  position: relative;
+
+  .Content {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    @media (min-width: 768px) {
+      text-align: left;
+      left: 8%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.ContactBlock {
+  cursor: pointer;
+  text-shadow: 0 0 1px;
+  border: 2px solid $gold;
+
+  .Text {
+    position: relative;
+    z-index: 2;
+
+    * {
+      text-shadow: inherit;
+      transition-delay: 0.1s;
+    }
+  }
+
+  &:hover {
+    .Text {
+      span, h3 {
+        color: $amber;
+      }
+
+      p {
+        color: $white;
+      }
+    }
+  }
+}
