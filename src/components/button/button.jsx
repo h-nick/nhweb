@@ -19,7 +19,7 @@ const Button = ({
   if (newTab) {
     component = (
       <a
-        className={clsx(classes.Button, !blackVariation && 'white', className)}
+        className={clsx(classes.Button, !blackVariation && 'white', className, 'rising-effect')}
         href={href}
         target="_blank"
         rel="noopener noreferrer"
@@ -32,7 +32,7 @@ const Button = ({
   } else {
     component = (
       <a
-        className={clsx(classes.Button, !blackVariation && 'white', className)}
+        className={clsx(classes.Button, !blackVariation && 'white', className, 'rising-effect')}
         href={href}
       >
         <div className={classes.Text}>

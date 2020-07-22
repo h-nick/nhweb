@@ -93,3 +93,33 @@ h4 {
 .highlight-variation {
   color: $amber;
 }
+
+.rising-effect {
+  overflow: hidden;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 0px;
+    width: 100%;
+    z-index: 1;
+    background: $blue;
+    transition: all 0.5s ease;
+  }
+
+  &:hover {
+    text-decoration: none;
+    text-shadow: none;
+    transition: all 0.5s ease;
+
+    &:before {
+      bottom: 0%;
+      top: auto;
+      height: 100%;
+    }
+  }
+}
