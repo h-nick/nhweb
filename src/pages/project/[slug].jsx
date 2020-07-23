@@ -50,10 +50,18 @@ const Project = (project) => (
         </Col>
       </Row>
 
-      <Row>
+      <Row className="mt-3">
         {
-          project.gallery.map((img) => (
-            <Col className="my-3" xs={12} key={img.id}>
+          project.gallery.length > 0 && (
+            <Col className="mt-3">
+              <h2>Screen captures</h2>
+            </Col>
+          )
+        }
+
+        {
+          project.gallery.map((img, index) => (
+            <Col className={`${index > 0 ? 'my-5' : ''}`} xs={12} key={img.id}>
               <img
                 className={classes.GalleryImg}
                 src={`https://api.nicolashurtado.dev${img.url}`}
