@@ -90,13 +90,14 @@ const Home = () => {
                   <h1 className="white big-size">I am Nicolas</h1>
 
                   <div className={classes.Buttons}>
-                    <Button href="/contact" title="CONTACT ME" />
+                    <Button className="mr-2" href="/contact" title="CONTACT ME" />
 
                     {
                       resume
                       && resume.pdf
                       && resume.pdf.url && (
                         <Button
+                          className="ml-2"
                           href={`https://api.nicolashurtado.dev${resume.pdf.url}`}
                           title="GET RESUME"
                         />

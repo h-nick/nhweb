@@ -2,7 +2,7 @@
 
 .Top {
   height: 100vh;
-  min-height: 583px;
+  min-height: 600px;
   position: relative;
 
   .BgVideo {
@@ -102,10 +102,9 @@
   .Buttons {
     display: flex;
     margin-top: 1rem;
-    margin-left: 5px;
-
-    a {
-      margin-right: 1rem;
+    
+    @media (min-width: 992px) {
+      margin-left: 5px;
     }
   }
 }
