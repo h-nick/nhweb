@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios';
 import clsx from 'clsx';
 import moment from 'moment';
@@ -105,6 +107,10 @@ const Home = () => {
                     }
                   </div>
                 </div>
+              </div>
+
+              <div className={clsx(classes.Arrow, 'arrow-anim')}>
+                <FontAwesomeIcon icon={faChevronDown} />
               </div>
             </div>
 
