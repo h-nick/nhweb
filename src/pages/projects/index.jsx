@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import clsx from 'clsx';
 import { Container, Row, Col } from 'react-bootstrap';
+import AnimatedChevron from '../../components/animated-chevron/animated-chevron';
 import apiInstance from '../../utils/api-instance';
-import Button from '../../components/button/button';
 import ContactBlock from '../../components/contact-block/contact-block';
 import Footer from '../../components/footer/footer';
 import LoaderAnimation from '../../components/loader-animation/loader-animation';
@@ -60,6 +63,8 @@ const Projects = () => {
                   <button type="button">PLACEHOLDER</button>
                 </div>
               </div>
+
+              <AnimatedChevron />
             </div>
 
             <Container className="py-5 my-5">

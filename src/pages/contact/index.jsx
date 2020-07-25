@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import clsx from 'clsx';
 import { Container, Row, Col } from 'react-bootstrap';
-import apiInstance from '../../utils/api-instance';
-import Button from '../../components/button/button';
+import axios from 'axios';
+import AnimatedChevron from '../../components/animated-chevron/animated-chevron';
 import Footer from '../../components/footer/footer';
 import Navbar from '../../components/navbar/navbar';
 import classes from './index.module.scss';
@@ -25,6 +27,8 @@ const Projects = () => (
           me today
         </h1>
       </div>
+
+      <AnimatedChevron />
     </div>
 
     <Container className="p-5 my-5" fluid>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import AnimatedChevron from '../../components/animated-chevron/animated-chevron';
 import apiInstance from '../../utils/api-instance';
 import Footer from '../../components/footer/footer';
 import Navbar from '../../components/navbar/navbar';
@@ -22,6 +23,8 @@ const Project = (project) => (
       <div className={classes.Content}>
         <h1 className="highlight-variation big-size">{project.title}</h1>
       </div>
+
+      <AnimatedChevron />
     </div>
 
     <Container className="my-5">
