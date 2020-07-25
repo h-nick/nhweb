@@ -181,6 +181,13 @@ const Home = () => {
                         <p className="text-center text-md-right">Class of 2019 - Valedictorian</p>
                       </div>
                     </div>
+
+                    <div className="my-5">
+                      <h2 className="text-center text-md-right highlight">Languages I speak</h2>
+                      <p className="text-center text-md-right mb-0">Spanish (Native)</p>
+                      <p className="text-center text-md-right mb-0">English (C2)</p>
+                      <p className="text-center text-md-right mb-0">German (A1)</p>
+                    </div>
                   </div>
                 </Col>
 
