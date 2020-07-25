@@ -8,6 +8,7 @@ import apiInstance from '../utils/api-instance';
 import Button from '../components/button/button';
 import ContactBlock from '../components/contact-block/contact-block';
 import Footer from '../components/footer/footer';
+import ImageLoader from '../components/image-loader/image-loader';
 import LoaderAnimation from '../components/loader-animation/loader-animation';
 import LoaderError from '../components/loader-error/loader-error';
 import Navbar from '../components/navbar/navbar';
@@ -82,9 +83,11 @@ const Home = () => {
               </div>
 
               <div className={classes.ContentWrapper}>
-                <div className={classes.Image}>
-                  <img src="/images/profile.jpg" alt="Nicolas" />
-                </div>
+                <ImageLoader
+                  src="/images/profile.jpg"
+                  alt="Photo of myself"
+                  className={classes.Image}
+                />
 
                 <div className={classes.Content}>
                   <h1 className="highlight-variation big-size">Hello!</h1>
