@@ -20,11 +20,33 @@
   }
 }
 
+div.ContactBlock {
+  @media (min-width: 768px) {
+    height: 280px;
+  }
+
+  @media (min-width: 825px) {
+    height: 250px;
+  }
+
+  @media (min-width: 992px) {
+    height: 230px;
+  }
+
+  @media (min-width: 1200px) {
+    height: 370px;
+  }
+
+  @media (min-width: 1360px) {
+    height: auto;
+  }
+}
+
 .ContactBlock {
   cursor: pointer;
   text-shadow: 0 0 1px;
   border: 2px solid $gold;
-
+  
   .Text {
     position: relative;
     z-index: 2;
@@ -37,7 +59,7 @@
 
   &:hover {
     .Text {
-      span, h3 {
+      span, h4 {
         color: $amber;
       }
 
