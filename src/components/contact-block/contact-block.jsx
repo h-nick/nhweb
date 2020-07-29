@@ -15,7 +15,8 @@ const ContactBlock = () => (
 
           <h3 className="text-center white px-md-5 my-3">
             Send me a message and I&apos;ll get back to you as soon as possible.
-            Whether it is to say hello, ask for a quote, an inquiry or anything else.
+            Whether it is to say hello, ask for a quote, an inquiry, a job offer
+            or anything else.
           </h3>
         </Col>
       </Row>

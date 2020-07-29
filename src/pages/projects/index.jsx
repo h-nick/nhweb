@@ -1,7 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import clsx from 'clsx';
 import { Container, Row, Col } from 'react-bootstrap';
 import AnimatedChevron from '../../components/animated-chevron/animated-chevron';
 import apiInstance from '../../utils/api-instance';

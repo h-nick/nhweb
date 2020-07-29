@@ -118,9 +118,10 @@ const Home = () => {
               <Row>
                 <Col>
                   <h3 className="px-md-5 text-center">
-                    I am a Computer Systems Engineer that does stuff and whatever
-                    after all, this is a sample text. So it&apos;s not like it matters what
-                    I write here.
+                    I am a graduated Computer Systems Engineer who has worked as a
+                    Full-Stack Web Developer for the past 2 years. As an engineer,
+                    I have implemented multiple information systems to improve
+                    business processes and generate strategic advantages
                   </h3>
                 </Col>
               </Row>
@@ -187,9 +188,15 @@ const Home = () => {
 
                     <div className="my-5">
                       <h2 className="text-center text-md-right highlight">Languages I speak</h2>
-                      <p className="text-center text-md-right mb-0">Spanish (Native)</p>
-                      <p className="text-center text-md-right mb-0">English (C2)</p>
-                      <p className="text-center text-md-right mb-0">German (A1)</p>
+                      <p className="text-center text-md-right mb-0">
+                        Spanish (Native)
+                      </p>
+                      <p className="text-center text-md-right mb-0">
+                        English (Bilingual Proficiency)
+                      </p>
+                      <p className="text-center text-md-right mb-0">
+                        German (Elementary Proficiency)
+                      </p>
                     </div>
                   </div>
                 </Col>
@@ -242,13 +249,15 @@ const Home = () => {
 
             <div className={clsx(classes.Projects, 'my-5')}>
               <Container className="py-5">
-                <h2 className="highlight-variation text-center">Check out some of my most recent projects</h2>
+                <h2 className="highlight-variation text-center">
+                  Check out some of my most recent projects
+                </h2>
 
                 <p className="px-md-5 white text-center">
-                  Nowadays I mostly work on webdev, but I&apos;ve done my fair share
-                  of other project. The most recent ones shown here. Filler text Filler
-                  text Filler text. There are also some vanity projects not shown here
-                  that can be found on my github page.
+                  While most of my work nowadays is related to web design &amp; development,
+                  I&apos;ve worked on several kind of projects before. The most recent ones
+                  are shown here. You can also visit my GitHub profile to check other personal
+                  projects not shown here.
                 </p>
 
                 <Row className="mt-5 justify-content-center">
@@ -298,13 +307,6 @@ const Home = () => {
 
             <Container className={clsx(classes.Blog, 'py-5')}>
               <h2 className="text-center">My latest posts</h2>
-
-              <p className="px-md-5 text-center">
-                Nowadays I mostly work on webdev, but I&apos;ve done my fair share of other project.
-                The most recent ones shown here. Filler text Filler text Filler text.
-                There are also some vanity projects not shown here that can be found
-                on my github page.
-              </p>
 
               <Row className="mt-5 justify-content-center">
                 {/*
