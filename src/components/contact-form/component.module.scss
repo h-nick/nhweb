@@ -1,0 +1,52 @@
+@import '../../styles/variables';
+
+.Form {
+  width: 100%;
+
+  @media (min-width: 450px) {
+    width: 65%;
+  }
+
+  .Input {
+    label {
+      font-size: 14px;
+      width: 100%;
+      margin: 5px;
+    }
+  
+    input, textarea, select {
+      border: solid $gold 1px;
+      border-radius: 3px;
+      margin: 0;
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    textarea {
+      min-height: 100px;
+      max-height: 195px;
+    }
+  
+    small {
+      font-size: 12px;
+      line-height: 0;
+      color: red;
+      font-weight: 400;
+    }
+  }
+
+  .Submit {
+    display: flex;
+    justify-content: center;
+
+    input[type=submit] {
+      font-size: 14px;
+      background-color: $blue;
+      color: $white;
+    }
+
+    .ButtonOff {
+      opacity: 0.5;
+    }
+  }
+}
