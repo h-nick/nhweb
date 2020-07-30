@@ -67,7 +67,7 @@ const Projects = () => {
         <Row>
           <Col md={4}>
             <div
-              className={clsx(classes.ContactBlock, 'rising-effect p-3')}
+              className={clsx(classes.ContactBlock, 'hover-effect p-3')}
               onClick={showModal}
               onKeyPress={showModal}
               role="button"
@@ -87,7 +87,7 @@ const Projects = () => {
           </Col>
           <Col md={4} className="mt-3 mt-md-0">
             <div
-              className={clsx(classes.ContactBlock, 'rising-effect p-3')}
+              className={clsx(classes.ContactBlock, 'hover-effect p-3')}
               onClick={showModal}
               onKeyPress={showModal}
               role="button"
@@ -107,7 +107,7 @@ const Projects = () => {
           </Col>
           <Col md={4} className="mt-3 mt-md-0">
             <div
-              className={clsx(classes.ContactBlock, 'rising-effect p-3')}
+              className={clsx(classes.ContactBlock, 'hover-effect p-3')}
               onClick={showModal}
               onKeyPress={showModal}
               role="button"
@@ -130,7 +130,7 @@ const Projects = () => {
         <Row className="mt-3">
           <Col sm={6}>
             <a
-              className={clsx(classes.ContactBlock, 'rising-effect p-3 d-block')}
+              className={clsx(classes.ContactBlock, 'hover-effect p-3 d-block')}
               href="tel://+580000000000"
             >
               <div className={classes.Text}>
@@ -142,7 +142,7 @@ const Projects = () => {
           </Col>
           <Col sm={6} className="mt-3 mt-sm-0">
             <a
-              className={clsx(classes.ContactBlock, 'rising-effect p-3 d-block')}
+              className={clsx(classes.ContactBlock, 'hover-effect p-3 d-block')}
               href="https://t.me/telegramusername"
               target="_blank"
               rel="noopener noreferrer"

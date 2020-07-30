@@ -92,16 +92,10 @@ div.ContactBlock {
   .Text {
     position: relative;
     z-index: 2;
-
-    * {
-      transition-delay: 0.1s;
-    }
   }
 
   &:hover {
     border-color: transparent;
-    transition: border-color 0.8s ease;
-    transition-delay: 0.25s;
 
     .Text {
       span, h4 {
