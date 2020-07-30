@@ -1,7 +1,9 @@
 import React from 'react';
+import clsx from 'clsx';
 import { Container, Row, Col } from 'react-bootstrap';
 import AnimatedChevron from '../../components/animated-chevron/animated-chevron';
 import apiInstance from '../../utils/api-instance';
+import Button from '../../components/button/button';
 import Footer from '../../components/footer/footer';
 import Navbar from '../../components/navbar/navbar';
 import classes from './index.module.scss';
@@ -48,8 +50,35 @@ const Project = (project) => (
           <h2>Technologies used</h2>
           <p>{project.technologies}</p>
 
-          <button type="button" className="d-block mb-1">PLACEHOLDER BUTTON TO WEBSITE</button>
-          <button type="button" className="d-block">PLACEHOLDER BUTTON TO REPOSITORY</button>
+          <div
+            className={
+              clsx(classes.Buttons, (project.repository_link || project.public_link) && 'mb-1')
+            }
+          >
+            {
+              project.public_link && (
+                <Button
+                  className={classes.Button}
+                  href={project.public_link}
+                  title="CHECK WEBSITE"
+                  newTab
+                  blackVariation
+                />
+              )
+            }
+
+            {
+              project.repository_link && (
+                <Button
+                  className={clsx(classes.Button, 'ml-0 ml-lg-1 mt-1 mt-lg-0')}
+                  href={project.repository_link}
+                  title="CHECK REPOSITORY"
+                  newTab
+                  blackVariation
+                />
+              )
+            }
+          </div>
         </Col>
       </Row>
 

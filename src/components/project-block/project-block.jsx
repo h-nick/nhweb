@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
+import Button from '../button/button';
 import ImageLoader from '../image-loader/image-loader';
 import classes from './component.module.scss';
 
@@ -13,9 +14,12 @@ const ProjectBlock = (props) => {
     <div className={clsx(classes.Project, className)}>
       <div className={classes.Data}>
         <h4 className="white text-center m-0 px-2">{title}</h4>
-        <button type="button" className="mt-2 mx-auto d-block text-center">
-          PLACEHOLDER
-        </button>
+
+        <Button
+          className="w-75 mt-2 mx-auto d-block text-center"
+          href={`./project/${slug}`}
+          title="SEE PROJECT"
+        />
       </div>
 
       <div className={classes.Cover} />
