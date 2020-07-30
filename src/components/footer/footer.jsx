@@ -61,7 +61,7 @@ const Footer = () => (
 
           <div className={clsx(classes.Copyright, 'text-center text-lg-left')}>
             <span className="highlight-variation">
-              © 2019 Nicolas Hurtado
+              2020 • Nicolas Hurtado
             </span>
 
             <span className="highlight-variation">

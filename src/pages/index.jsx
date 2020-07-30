@@ -260,13 +260,6 @@ const Home = () => {
                   Check out some of my most recent projects
                 </h2>
 
-                <p className="px-md-5 white text-center">
-                  While most of my work nowadays is related to web design &amp; development,
-                  I&apos;ve worked on several kind of projects before. The most recent ones
-                  are shown here. You can also visit my GitHub profile to check other personal
-                  projects not shown here.
-                </p>
-
                 <Row className="mt-5 justify-content-center">
                   {
                     !loading && (!latestProjects || !latestProjects.length) && (

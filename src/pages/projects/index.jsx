@@ -75,9 +75,12 @@ const Projects = () => {
               <Row>
                 <Col className="px-5">
                   <h4 className="text-center">
-                    Although nowadays I mostly work as a Full-Stack Web Developer, I have
-                    worked in a range of projects. This is a collection of both work and
-                    personal projects. Something something placeholdertext
+                    While most of my work nowadays is related to web design &amp; development,
+                    I&apos;ve worked on several kind of projects before
+                  </h4>
+                  <h4 className="text-center">
+                    All the projects shown here are work-related.
+                    Personal projects can be found on my GitHub page
                   </h4>
                 </Col>
               </Row>
