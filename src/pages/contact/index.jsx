@@ -136,7 +136,7 @@ const Projects = () => {
               <div className={classes.Text}>
                 <h4>Contact me through Whatsapp</h4>
 
-                <span className="title highlight">At +58 000 000 0000</span>
+                <span className="title highlight">At +58 424 907 1142</span>
               </div>
             </a>
           </Col>
@@ -150,7 +150,7 @@ const Projects = () => {
               <div className={classes.Text}>
                 <h4>Or through Telegram</h4>
 
-                <span className="title highlight">At @telegramusername</span>
+                <span className="title highlight">At @dhnik</span>
               </div>
             </a>
           </Col>
