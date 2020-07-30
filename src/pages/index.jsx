@@ -104,6 +104,7 @@ const Home = () => {
                           className="ml-2"
                           href={`https://api.nicolashurtado.dev${resume.pdf.url}`}
                           title="GET RESUME"
+                          newTab
                         />
                       )
                     }
