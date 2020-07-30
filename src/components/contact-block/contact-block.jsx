@@ -5,7 +5,7 @@ import Button from '../button/button';
 import classes from './component.module.scss';
 
 const ContactBlock = () => (
-  <div className={clsx(classes.Contact, 'mt-5')}>
+  <div className={clsx(classes.Contact)}>
     <div className={classes.Cover} />
 
     <Container className={clsx(classes.Container, 'py-5')}>

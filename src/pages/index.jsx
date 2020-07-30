@@ -254,7 +254,7 @@ const Home = () => {
               </Row>
             </Container>
 
-            <div className={clsx(classes.Projects, 'my-5')}>
+            <div className={clsx(classes.Projects, 'mt-5')}>
               <Container className="py-5">
                 <h2 className="highlight-variation text-center">
                   Check out some of my most recent projects
@@ -312,65 +312,53 @@ const Home = () => {
               </Container>
             </div>
 
-            <Container className={clsx(classes.Blog, 'py-5')}>
-              <h2 className="text-center">My latest posts</h2>
+            {
+              (!loading && latestPosts?.length > 0) && (
+                <Container className={clsx(classes.Blog, 'py-5')}>
+                  <h2 className="text-center">My latest posts</h2>
 
-              <Row className="mt-5 justify-content-center">
-                {/*
-                  TODO: Fix blog dynamic data based on Dev.to API fetched object.
-                */}
+                  <Row className="mt-5 justify-content-center">
+                    {/*
+                      TODO: Fix blog dynamic data based on Dev.to API fetched object.
+                    */}
 
-                {
-                  !loading && (!latestPosts || !latestPosts.length) && (
-                    <Col>
-                      <h3 className="text-center">
-                        Apparently there are no posts published :(
-                      </h3>
-                    </Col>
-                  )
-                }
+                    {
+                      latestPosts.map((post, index) => (
+                        <Col xs={12} md={6} lg={4}>
+                          <div
+                            className={clsx(
+                              classes.Post,
+                              index > 0 && 'mt-4 mt-md-0',
+                              index > 1 && 'd-one d-lg-block',
+                            )}
+                          >
+                            <a href="#.">
+                              <div className={classes.Image}>
+                                <img src="https://picsum.photos/200" alt="" />
+                              </div>
 
-                {
-                  !loading
-                  && latestPosts
-                  && latestPosts.length > 0
-                  && latestPosts.map((post, index) => (
-                    <Col xs={12} md={6} lg={4}>
-                      <div
-                        className={
-                          clsx(classes.Post, index > 0 && 'mt-4 mt-md-0', index > 1 && 'd-none d-lg-block')
-                        }
-                      >
-                        <a href="#.">
-                          <div className={classes.Image}>
-                            <img src="https://picsum.photos/200" alt="" />
+                              <div className={clsx(classes.Data, 'mt-4')}>
+                                <small className="highlight text-center d-block">
+                                  TEST CATEGORY
+                                </small>
+                                <p className="text-center d-block">TEST SHORT NAME</p>
+                              </div>
+                            </a>
                           </div>
+                        </Col>
+                      ))
+                    }
+                  </Row>
 
-                          <div className={clsx(classes.Data, 'mt-4')}>
-                            <small className="highlight text-center d-block">TEST CATEGORY</small>
-                            <p className="text-center d-block">TEST SHORT NAME</p>
-                          </div>
-                        </a>
-                      </div>
-                    </Col>
-                  ))
-                }
-              </Row>
-
-              {
-                !loading
-                && latestPosts
-                && latestPosts.length > 0
-                && (
                   <Button
                     className={clsx(classes.SectionButton, 'mt-4 mx-auto')}
                     href="/projects"
-                    title="MY DEV.TO PROFILE"
+                    title="DEV.TO PROFILE"
                     blackVariation
                   />
-                )
-              }
-            </Container>
+                </Container>
+              )
+            }
 
             <ContactBlock />
 
