@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import clsx from 'clsx';
 import moment from 'moment';
@@ -25,6 +25,19 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
   const [loadingError, setLoadingError] = useState(false);
 
+  const timer = useRef(undefined);
+
+  useEffect(() => {
+    timer.current = setTimeout(() => {
+      setLoading(false);
+      setLoadingError(true);
+    }, 20000);
+
+    return () => {
+      clearTimeout(timer.current);
+    };
+  }, []);
+
   useEffect(() => {
     (async () => {
       setLoading(true);
@@ -45,11 +58,15 @@ const Home = () => {
             setLatestPosts(fetchedPosts.data);
             setLoading(false);
             setLoadingError(false);
+
+            clearTimeout(timer.current);
           },
         ))
         .catch(() => {
           setLoading(false);
           setLoadingError(true);
+
+          clearTimeout(timer.current);
         });
     })();
   }, []);
