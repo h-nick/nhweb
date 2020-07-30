@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import clsx from 'clsx';
+import {
+  Container, Row, Col,
+} from 'react-bootstrap';
 import { CSSTransition } from 'react-transition-group';
 import AnimatedChevron from '../../components/animated-chevron/animated-chevron';
 import apiInstance from '../../utils/api-instance';
+import Button from '../../components/button/button';
 import ContactBlock from '../../components/contact-block/contact-block';
 import Footer from '../../components/footer/footer';
 import LoaderAnimation from '../../components/loader-animation/loader-animation';
@@ -62,26 +66,32 @@ const Projects = () => {
 
               <div className={classes.Content}>
                 <h1 className="highlight-variation big-size">Project Portfolio</h1>
-
-                <div>
-                  <button type="button">PLACEHOLDER</button>
-                </div>
               </div>
 
               <AnimatedChevron />
             </div>
 
-            <Container className="py-5 my-5">
+            <Container className="py-5 mt-5">
               <Row>
                 <Col className="px-5">
                   <h4 className="text-center">
                     While most of my work nowadays is related to web design &amp; development,
                     I&apos;ve worked on several kind of projects before
                   </h4>
+
                   <h4 className="text-center">
                     All the projects shown here are work-related.
                     Personal projects can be found on my GitHub page
                   </h4>
+
+                  <div className={clsx(classes.Button, 'my-3')}>
+                    <Button
+                      href="https://github.com/hniklass"
+                      title="CHECK MY GITHUB"
+                      newTab
+                      blackVariation
+                    />
+                  </div>
                 </Col>
               </Row>
             </Container>
