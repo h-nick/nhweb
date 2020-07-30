@@ -65,7 +65,13 @@ const Projects = () => {
               <div className={classes.Cover} />
 
               <div className={classes.Content}>
-                <h1 className="highlight-variation big-size">Project Portfolio</h1>
+                <h1 className="white big-size">
+                  Portfolio &amp;
+                  {' '}
+                  <span className="highlight-variation big-size title">Work</span>
+                  {' '}
+                  Projects
+                </h1>
               </div>
 
               <AnimatedChevron />
