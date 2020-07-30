@@ -3,6 +3,7 @@ import axios from 'axios';
 import clsx from 'clsx';
 import moment from 'moment';
 import { Container, Row, Col } from 'react-bootstrap';
+import { CSSTransition } from 'react-transition-group';
 import AnimatedChevron from '../components/animated-chevron/animated-chevron';
 import apiInstance from '../utils/api-instance';
 import Button from '../components/button/button';
@@ -60,11 +61,16 @@ const Home = () => {
       }
 
       {
-        loading && (
+        <CSSTransition
+          timeout={1000}
+          in={loading}
+          unmountOnExit
+          classNames="loader-bg"
+        >
           <div className="loader-bg">
             <LoaderAnimation />
           </div>
-        )
+        </CSSTransition>
       }
 
       {

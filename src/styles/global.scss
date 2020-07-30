@@ -6,6 +6,20 @@
   position: relative;
 }
 
+.loader-bg-enter-active {
+  * {
+    opacity: 1;
+    transition: all 1s ease;
+  }
+}
+
+.loader-bg-exit-active {
+  * {
+    opacity: 0;
+    transition: all 1s ease;
+  }
+}
+
 html, body {
   font-size: 90%;
   max-width: 1920px;

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { CSSTransition } from 'react-transition-group';
 import AnimatedChevron from '../../components/animated-chevron/animated-chevron';
 import apiInstance from '../../utils/api-instance';
 import ContactBlock from '../../components/contact-block/contact-block';
@@ -39,11 +40,16 @@ const Projects = () => {
       }
 
       {
-        loading && (
+        <CSSTransition
+          timeout={1000}
+          in={loading}
+          unmountOnExit
+          classNames="loader-bg"
+        >
           <div className="loader-bg">
             <LoaderAnimation />
           </div>
-        )
+        </CSSTransition>
       }
 
       {
@@ -53,8 +59,7 @@ const Projects = () => {
               <Navbar />
 
               <div className={classes.Content}>
-                <h1 className="highlight-variation big-size">Some projects</h1>
-                <h1 className="white big-size">I&apos;ve worked on</h1>
+                <h1 className="highlight-variation big-size">Project Portfolio</h1>
 
                 <div>
                   <button type="button">PLACEHOLDER</button>
