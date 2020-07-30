@@ -33,7 +33,6 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <script src="/modernizr.js" type="text/javascript" />
         </body>
       </Html>
     );
