@@ -44,6 +44,8 @@ const Projects = () => {
       <div className={classes.Top}>
         <Navbar />
 
+        <div className={classes.Cover} />
+
         <div className={classes.Content}>
           <h1 className="white big-size d-none d-md-block mb-3">
             Inquiries?

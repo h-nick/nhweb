@@ -58,6 +58,8 @@ const Projects = () => {
             <div className={classes.Top}>
               <Navbar />
 
+              <div className={classes.Cover} />
+
               <div className={classes.Content}>
                 <h1 className="highlight-variation big-size">Project Portfolio</h1>
 

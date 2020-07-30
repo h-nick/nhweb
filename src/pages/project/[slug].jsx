@@ -15,12 +15,12 @@ const Project = (project) => (
 
       <div className={classes.Cover} />
 
-      <div className={classes.BgImg}>
+      {/* <div className={classes.BgImg}>
         <img
           src={`https://api.nicolashurtado.dev${project.main_photo.url}`}
           alt="Project screen capture"
         />
-      </div>
+      </div> */}
 
       <div className={classes.Content}>
         <h1 className="highlight-variation big-size">{project.title}</h1>
