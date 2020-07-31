@@ -142,10 +142,13 @@ const Home = () => {
               <Row>
                 <Col>
                   <h3 className="px-md-5 text-center">
-                    I am a graduated Computer Systems Engineer who has worked as a
-                    Full-Stack Web Developer for the past 2 years. As an engineer,
-                    I have implemented multiple information systems to improve
-                    business processes and generate strategic advantages
+                    I am a graduated Computer Systems Engineer who nowadays work as a
+                    Full-Stack Web Developer
+                  </h3>
+
+                  <h3 className="px-md-5 text-center">
+                    As part of my work I have also implemented multiple information systems
+                    to improve business processes and generate strategic advantages
                   </h3>
                 </Col>
               </Row>
