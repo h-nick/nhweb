@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { yupResolver } from '@hookform/resolvers';
 import clsx from 'clsx';
+import { Col, Row } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
 import apiInstance from '../../utils/api-instance';
@@ -56,35 +57,41 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className={clsx(classes.Form, 'mx-auto')}>
-      <div className={classes.Input}>
-        <label htmlFor="firstName">
-          First Name *
+      <Row>
+        <Col>
+          <div className={classes.Input}>
+            <label htmlFor="firstName">
+              First Name *
 
-          <input
-            name="firstName"
-            id="firstName"
-            defaultValue=""
-            ref={register}
-          />
+              <input
+                name="firstName"
+                id="firstName"
+                defaultValue=""
+                ref={register}
+              />
 
-          <small>{errors.firstName?.message}</small>
-        </label>
-      </div>
+              <small>{errors.firstName?.message}</small>
+            </label>
+          </div>
+        </Col>
 
-      <div className={classes.Input}>
-        <label htmlFor="lastName">
-          Last Name *
+        <Col>
+          <div className={classes.Input}>
+            <label htmlFor="lastName">
+              Last Name *
 
-          <input
-            name="lastName"
-            id="lastName"
-            defaultValue=""
-            ref={register}
-          />
+              <input
+                name="lastName"
+                id="lastName"
+                defaultValue=""
+                ref={register}
+              />
 
-          <small>{errors.lastName?.message}</small>
-        </label>
-      </div>
+              <small>{errors.lastName?.message}</small>
+            </label>
+          </div>
+        </Col>
+      </Row>
 
       <div className={classes.Input}>
         <label htmlFor="email">
