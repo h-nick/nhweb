@@ -145,7 +145,7 @@ const Home = () => {
                 </div>
               </div>
 
-              <AnimatedChevron />
+              <AnimatedChevron className="d-none d-lg-block" />
             </div>
 
             <Container className={clsx(classes.Description, 'my-5 py-5')}>
