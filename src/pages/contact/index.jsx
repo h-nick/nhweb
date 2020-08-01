@@ -74,7 +74,7 @@ const Projects = () => {
       </div>
 
       <Container className="p-5 my-5" fluid>
-        <Row>
+        <Row className="px-xl-5">
           <Col md={4}>
             <div
               className={clsx(classes.ContactBlock, 'hover-effect p-3')}
@@ -88,7 +88,7 @@ const Projects = () => {
 
                 <p className="m-0">
                   Are you looking for a professional web developer or have a job offer?
-                  Submit your message and I&apos;ll get back to you.
+                  Click here to submit your message and I&apos;ll get back to you.
                 </p>
 
                 <span className="title highlight">SEND INFO</span>
@@ -104,11 +104,11 @@ const Projects = () => {
               tabIndex="0"
             >
               <div className={classes.Text}>
-                <h4>Support request</h4>
+                <h4>Request support</h4>
 
                 <p className="m-0">
                   Are you a client having problems with a service or product?
-                  Send a message and I will respond as soon as possible.
+                  Click here to request support.
                 </p>
 
                 <span className="title highlight">REQUEST SUPPORT</span>
@@ -124,10 +124,10 @@ const Projects = () => {
               tabIndex="0"
             >
               <div className={classes.Text}>
-                <h4>General inquiry</h4>
+                <h4>General inquiries</h4>
 
                 <p className="m-0">
-                  Send me any question you have about the services I offer, the development process
+                  Send me any questions you have about the services I offer, the process
                   or a friendly hello anytime you want.
                 </p>
 
@@ -137,14 +137,14 @@ const Projects = () => {
           </Col>
         </Row>
 
-        <Row className="mt-3">
+        <Row className="mt-3 px-xl-5">
           <Col sm={6}>
             <a
               className={clsx(classes.ContactBlock, 'hover-effect p-3 d-block')}
               href="tel://+580000000000"
             >
               <div className={classes.Text}>
-                <h4>Contact me through Whatsapp</h4>
+                <h4>Whatsapp contact</h4>
 
                 <span className="title highlight">At +58 424 907 1142</span>
               </div>
@@ -158,7 +158,7 @@ const Projects = () => {
               rel="noopener noreferrer"
             >
               <div className={classes.Text}>
-                <h4>Or through Telegram</h4>
+                <h4>Telegram contact</h4>
 
                 <span className="title highlight">At @dhnik</span>
               </div>
