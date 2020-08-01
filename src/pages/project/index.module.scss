@@ -3,6 +3,7 @@
 
 .Top {
   background: $blue;
+  background: $lines;
   height: 100vh;
   position: relative;
 
@@ -17,7 +18,7 @@
     z-index: 3;
   }
 
-  .BgImg {
+  /* .BgImg {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -31,16 +32,15 @@
       height: 100%;
       object-fit: cover;
     }
-  }
+  } */
 
   .Cover {
     background: $blue;
-    background: $lines;
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: 2;
-    opacity: 0.8;
+    opacity: 0.5;
     top: 0;
     left: 0;
   }
