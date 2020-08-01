@@ -144,7 +144,7 @@ const Projects = () => {
                       <ProjectBlock
                         title={project.title}
                         slug={project.slug}
-                        mainPhoto={project.main_photo.url}
+                        picture={project.small_photo?.url}
                         className={
                           `${index !== 0 && index === 1
                             ? 'mt-4 mt-md-0'

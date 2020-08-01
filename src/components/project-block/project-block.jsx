@@ -7,7 +7,7 @@ import classes from './component.module.scss';
 
 const ProjectBlock = (props) => {
   const {
-    title, slug, mainPhoto, className,
+    title, slug, picture, className,
   } = props;
 
   return (
@@ -26,7 +26,7 @@ const ProjectBlock = (props) => {
 
       <div className={classes.Image}>
         <ImageLoader
-          src={`https://api.nicolashurtado.dev${mainPhoto}`}
+          src={`https://api.nicolashurtado.dev${picture}`}
           alt={slug}
           className={classes.Image}
         />
@@ -38,7 +38,7 @@ const ProjectBlock = (props) => {
 ProjectBlock.propTypes = {
   title: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
-  mainPhoto: PropTypes.string.isRequired,
+  picture: PropTypes.string.isRequired,
   className: PropTypes.string,
 };
 
