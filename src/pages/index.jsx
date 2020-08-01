@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import clsx from 'clsx';
 import moment from 'moment';
+import Head from 'next/head';
 import { Container, Row, Col } from 'react-bootstrap';
 import { CSSTransition } from 'react-transition-group';
 import AnimatedChevron from '../components/animated-chevron/animated-chevron';
@@ -73,6 +74,15 @@ const Home = () => {
 
   return (
     <>
+      <Head>
+        <title>Nicolas Hurtado</title>
+        <meta
+          name="description"
+          content="A Computer Systems Engineer working as a full-stack web
+          developer, creating awesome stuff to improve your business."
+        />
+      </Head>
+
       {
         loadingError && <LoaderError />
       }

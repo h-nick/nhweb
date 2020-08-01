@@ -1,5 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
+import Head from 'next/head';
 import { Container, Row, Col } from 'react-bootstrap';
 import AnimatedChevron from '../../components/animated-chevron/animated-chevron';
 import apiInstance from '../../utils/api-instance';
@@ -11,6 +12,19 @@ import classes from './index.module.scss';
 
 const Project = (project) => (
   <>
+    <Head>
+      <title>
+        {project.title}
+        {' '}
+        | Nicolas Hurtado
+      </title>
+      <meta
+        name="description"
+        content="A Computer Systems Engineer working as a full-stack web
+          developer, creating awesome stuff to improve your business."
+      />
+    </Head>
+
     <div className={classes.Top}>
       <Navbar />
 

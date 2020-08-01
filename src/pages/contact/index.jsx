@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import clsx from 'clsx';
+import Head from 'next/head';
 import {
   Container, Row, Col, Modal,
 } from 'react-bootstrap';
@@ -39,6 +40,15 @@ const Projects = () => {
 
   return (
     <>
+      <Head>
+        <title>Contact Me | Nicolas Hurtado</title>
+        <meta
+          name="description"
+          content="A Computer Systems Engineer working as a full-stack web
+          developer, creating awesome stuff to improve your business."
+        />
+      </Head>
+
       {modal}
 
       <div className={classes.Top}>
