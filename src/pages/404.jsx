@@ -13,7 +13,11 @@ const Error = () => (
           </p>
 
           <div className="w-75 mx-auto py-3">
-            <img className="w-100 h-100 d-block" src="/images/404.png" alt="This link does not exist" />
+            <img
+              className="w-100 h-100 d-block"
+              src="/images/404.png"
+              alt="This link does not exist"
+            />
           </div>
 
           <div className="mt-3 d-flex justify-content-center">

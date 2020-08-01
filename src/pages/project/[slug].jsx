@@ -6,7 +6,6 @@ import AnimatedChevron from '../../components/animated-chevron/animated-chevron'
 import apiInstance from '../../utils/api-instance';
 import Button from '../../components/button/button';
 import Footer from '../../components/footer/footer';
-import ImageLoader from '../../components/image-loader/image-loader';
 import Navbar from '../../components/navbar/navbar';
 import classes from './index.module.scss';
 
@@ -29,13 +28,6 @@ const Project = (project) => (
       <Navbar />
 
       <div className={classes.Cover} />
-
-      {/* <div className={classes.BgImg}>
-        <ImageLoader
-          src={`https://api.nicolashurtado.dev${project.main_photo.url}`}
-          alt="Project screen capture"
-        />
-      </div> */}
 
       <div className={classes.Content}>
         <h1 className="highlight-variation big-size">{project.title}</h1>

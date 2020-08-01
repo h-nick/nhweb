@@ -177,7 +177,9 @@ const Home = () => {
                         && skills
                         && skills.length > 0
                         && skills.filter((skill) => skill.type === 'front').map((skill) => (
-                          <p key={skill.id} className="text-center text-md-right">{skill.skill}</p>
+                          <p key={skill.id} className="text-center text-md-right">
+                            {skill.skill}
+                          </p>
                         ))
                       }
 
@@ -207,19 +209,37 @@ const Home = () => {
                         && skills
                         && skills.length > 0
                         && skills.filter((skill) => skill.type === 'other').map((skill) => (
-                          <p key={skill.id} className="text-center text-md-right">{skill.skill}</p>
+                          <p
+                            key={skill.id}
+                            className="text-center text-md-right"
+                          >
+                            {skill.skill}
+                          </p>
                         ))
                       }
                     </div>
 
                     <div className={classes.Education}>
-                      <div className={clsx(classes.University, 'my-5', 'text-center', 'text-md-right')}>
-                        <h2 className="text-center text-md-right highlight">Education</h2>
-                        <h4 className="text-center text-md-right">BSc. Computer Systems Engineering</h4>
+                      <div
+                        className={clsx(
+                          classes.University, 'my-5', 'text-center', 'text-md-right',
+                        )}
+                      >
+                        <h2 className="text-center text-md-right highlight">
+                          Education
+                        </h2>
+
+                        <h4 className="text-center text-md-right">
+                          BSc. Computer Systems Engineering
+                        </h4>
+
                         <p className="text-center text-md-right">
                           Santiago Mariño Polytechnic University Institute
                         </p>
-                        <p className="text-center text-md-right">Class of 2019 - Valedictorian</p>
+
+                        <p className="text-center text-md-right">
+                          Class of 2019 - Valedictorian
+                        </p>
                       </div>
                     </div>
 
@@ -258,7 +278,9 @@ const Home = () => {
                         <div key={experience.id} className={clsx(classes.Work, 'my-4')}>
                           <h3 className="text-center text-md-left">{experience.position}</h3>
                           <h4 className="text-center text-md-left">{experience.name}</h4>
-                          <p className="m-0 text-center text-md-left">{`${experience.location}`}</p>
+                          <p className="m-0 text-center text-md-left">
+                            {`${experience.location}`}
+                          </p>
                           <p className="text-center text-md-left">
                             {
                               `(${moment(experience.start_date).format('YYYY/MM')} - `
@@ -271,8 +293,13 @@ const Home = () => {
                           <ul className="pl-4">
                             {
                               experience.description.split('\n').map((value, index) => (
-                                /* eslint-disable-next-line react/no-array-index-key */
-                                <li key={index} className="pr-lg-5 pr-xl-3 text-justify">{value}</li>
+                                /* eslint-disable react/no-array-index-key */
+                                <li
+                                  key={index}
+                                  className="pr-lg-5 pr-xl-3 text-justify"
+                                >
+                                  {value}
+                                </li>
                               ))
                             }
                           </ul>
@@ -312,7 +339,8 @@ const Home = () => {
                           slug={project.slug}
                           picture={project.small_photo?.url}
                           className={
-                            `${index > 0 ? 'mt-4 mt-md-0' : ''}${index > 1 ? ' d-none d-lg-block' : ''}`
+                            `${index > 0 ? 'mt-4 mt-md-0' : ''}`
+                            + `${index > 1 ? ' d-none d-lg-block' : ''}`
                           }
                         />
                       </Col>

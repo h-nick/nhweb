@@ -12,18 +12,9 @@ import classes from './index.module.scss';
 
 const Projects = () => {
   const [show, setShow] = useState(false);
-  /* const [header, setHeader] = useState(undefined); */
 
   const showModal = () => {
     setShow(true);
-
-    /* if (type === 'hire') {
-      setHeader('Hire me');
-    } else if (type === 'support') {
-      setHeader('Support request');
-    } else {
-      setHeader('General inquiry');
-    } */
   };
 
   const modal = (
