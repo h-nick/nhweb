@@ -191,7 +191,7 @@ const Home = () => {
                         ))
                       }
 
-                      <h3 className="text-center text-md-right mt-5">Software Operations</h3>
+                      <h3 className="text-center text-md-right mt-5">Operations</h3>
                       {
                         !loading
                         && skills
@@ -201,7 +201,7 @@ const Home = () => {
                         ))
                       }
 
-                      <h3 className="text-center text-md-right mt-5">Other Skills</h3>
+                      <h3 className="text-center text-md-right mt-5">Other Technology Skills</h3>
                       {
                         !loading
                         && skills
