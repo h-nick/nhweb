@@ -90,15 +90,15 @@ const Projects = () => {
             <Container className="py-5 mt-5">
               <Row>
                 <Col className="px-5">
-                  <h4 className="text-center">
+                  <p className="title size-125 text-center">
                     While most of my work nowadays is related to web design &amp; development,
                     I&apos;ve worked on several kind of projects before
-                  </h4>
+                  </p>
 
-                  <h4 className="text-center">
+                  <p className="title size-125 text-center">
                     All the projects shown here are work-related.
                     Personal projects can be found on my GitHub page
-                  </h4>
+                  </p>
 
                   <div className={clsx(classes.Button, 'my-3')}>
                     <Button
@@ -117,9 +117,9 @@ const Projects = () => {
                 {
                   !loading && (!projects || !projects.length) && (
                     <Col>
-                      <h3 className="text-center">
+                      <p className="size-200 title text-center">
                         Apparently there are no projects published :(
-                      </h3>
+                      </p>
                     </Col>
                   )
                 }

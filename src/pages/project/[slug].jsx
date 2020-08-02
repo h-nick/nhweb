@@ -51,7 +51,7 @@ const Project = (project) => (
     <Container className="my-5">
       <Row>
         <Col>
-          <h2>Project description</h2>
+          <h2 className="size-200">Project description</h2>
 
           {
             project.description.split('\n').map((item, index) => (
@@ -66,7 +66,7 @@ const Project = (project) => (
 
       <Row className="mt-3">
         <Col>
-          <h2>Technologies used</h2>
+          <h2 className="size-200">Technologies used</h2>
           <p>{project.technologies}</p>
 
           <div
@@ -105,7 +105,7 @@ const Project = (project) => (
         {
           project.gallery.length > 0 && (
             <Col className="mt-3">
-              <h2>Screen captures</h2>
+              <h2 className="size-200">Screen captures</h2>
             </Col>
           )
         }

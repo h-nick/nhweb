@@ -13,7 +13,7 @@ const ProjectBlock = (props) => {
   return (
     <div className={clsx(classes.Project, className)}>
       <div className={classes.Data}>
-        <h4 className="white text-center m-0 px-2">{title}</h4>
+        <h1 className="size-125 white text-center m-0 px-2">{title}</h1>
 
         <Button
           className="w-75 mt-2 mx-auto d-block text-center"

@@ -11,13 +11,15 @@ const ContactBlock = () => (
     <Container className={clsx(classes.Container, 'py-5')}>
       <Row>
         <Col>
-          <h2 className="text-center highlight-variation">Need to contact me? Send a message!</h2>
+          <h1 className="size-200 text-center highlight-variation">
+            Need to contact me? Send a message!
+          </h1>
 
-          <h3 className="text-center white px-md-5 my-3">
+          <p className="title size-150 text-center white px-md-5 my-3">
             Send me a message and I&apos;ll get back to you as soon as possible.
             Whether it is to say hello, ask for a quote, an inquiry, a job offer
             or anything else
-          </h3>
+          </p>
         </Col>
       </Row>
 

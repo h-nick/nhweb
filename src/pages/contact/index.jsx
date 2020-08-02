@@ -75,7 +75,7 @@ const Projects = () => {
               tabIndex="0"
             >
               <div className={classes.Text}>
-                <h4>Hire me</h4>
+                <h2 className="size-125">Hire me</h2>
 
                 <p className="m-0">
                   Are you looking for a professional web developer or have a job offer?
@@ -95,7 +95,7 @@ const Projects = () => {
               tabIndex="0"
             >
               <div className={classes.Text}>
-                <h4>Request support</h4>
+                <h2 className="size-125">Request support</h2>
 
                 <p className="m-0">
                   Are you a client having problems with a service or product?
@@ -115,7 +115,7 @@ const Projects = () => {
               tabIndex="0"
             >
               <div className={classes.Text}>
-                <h4>General inquiries</h4>
+                <h2 className="size-125">General inquiries</h2>
 
                 <p className="m-0">
                   Send me any questions you have about the services I offer, the process
@@ -135,7 +135,7 @@ const Projects = () => {
               href="tel://+580000000000"
             >
               <div className={classes.Text}>
-                <h4>Whatsapp contact</h4>
+                <h2 className="size-125">Whatsapp contact</h2>
 
                 <span className="title highlight">At +58 424 907 1142</span>
               </div>
@@ -149,7 +149,7 @@ const Projects = () => {
               rel="noopener noreferrer"
             >
               <div className={classes.Text}>
-                <h4>Telegram contact</h4>
+                <h2 className="size-125">Telegram contact</h2>
 
                 <span className="title highlight">At @dhnik</span>
               </div>

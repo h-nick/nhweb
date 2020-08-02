@@ -151,15 +151,15 @@ const Home = () => {
             <Container className={clsx(classes.Description, 'my-5 py-5')}>
               <Row>
                 <Col>
-                  <h3 className="px-md-5 text-center">
+                  <p className="title size-150 px-md-5 text-center">
                     I am a graduated Computer Systems Engineer who nowadays work as a
                     Full-Stack Web Developer
-                  </h3>
+                  </p>
 
-                  <h3 className="px-md-5 text-center">
+                  <p className="title size-150 px-md-5 text-center">
                     As part of my work I have also implemented multiple information systems
                     to improve business processes and generate strategic advantages
-                  </h3>
+                  </p>
                 </Col>
               </Row>
             </Container>
@@ -168,10 +168,15 @@ const Home = () => {
               <Row>
                 <Col xs={{ span: 12, order: 2 }} md={{ span: 6, order: 1 }}>
                   <div className={clsx(classes.SkillsAndEducation, 'pr-md-5')}>
-                    <h2 className="text-center text-md-right highlight">Things I can do</h2>
+                    <h2 className="size-200 text-center text-md-right highlight">
+                      Things I can do
+                    </h2>
 
                     <div className={clsx(classes.Skills, 'my-4')}>
-                      <h3 className="text-center text-md-right">Front-End Engineering</h3>
+                      <h3 className="size-150 text-center text-md-right">
+                        Front-End Engineering
+                      </h3>
+
                       {
                         !loading
                         && skills
@@ -183,7 +188,10 @@ const Home = () => {
                         ))
                       }
 
-                      <h3 className="text-center text-md-right mt-5">Back-End Engineering</h3>
+                      <h3 className="size-150 text-center text-md-right mt-5">
+                        Back-End Engineering
+                      </h3>
+
                       {
                         !loading
                         && skills
@@ -193,17 +201,23 @@ const Home = () => {
                         ))
                       }
 
-                      <h3 className="text-center text-md-right mt-5">Operations</h3>
+                      <h3 className="size-150 text-center text-md-right mt-5">Operations</h3>
+
                       {
                         !loading
                         && skills
                         && skills.length > 0
                         && skills.filter((skill) => skill.type === 'ops').map((skill) => (
-                          <p key={skill.id} className="text-center text-md-right">{skill.skill}</p>
+                          <p key={skill.id} className="text-center text-md-right">
+                            {skill.skill}
+                          </p>
                         ))
                       }
 
-                      <h3 className="text-center text-md-right mt-5">Other Technology Skills</h3>
+                      <h3 className="size-150 text-center text-md-right mt-5">
+                        Other Technology Skills
+                      </h3>
+
                       {
                         !loading
                         && skills
@@ -225,13 +239,13 @@ const Home = () => {
                           classes.University, 'my-5', 'text-center', 'text-md-right',
                         )}
                       >
-                        <h2 className="text-center text-md-right highlight">
+                        <h2 className="size-200 text-center text-md-right highlight">
                           Education
                         </h2>
 
-                        <h4 className="text-center text-md-right">
+                        <h3 className="size-125 text-center text-md-right">
                           BSc. Computer Systems Engineering
-                        </h4>
+                        </h3>
 
                         <p className="text-center text-md-right">
                           Santiago Mariño Polytechnic University Institute
@@ -244,7 +258,9 @@ const Home = () => {
                     </div>
 
                     <div className="my-5">
-                      <h2 className="text-center text-md-right highlight">Languages I speak</h2>
+                      <h2 className="size-200 text-center text-md-right highlight">
+                        Languages I speak
+                      </h2>
                       <p className="text-center text-md-right mb-0">
                         Spanish (Native)
                       </p>
@@ -260,7 +276,9 @@ const Home = () => {
 
                 <Col xs={{ span: 12, order: 1 }} md={{ span: 6, order: 2 }}>
                   <div className={clsx(classes.WorkExperience, 'mb-5', 'mb-md-0', 'pl-md-5')}>
-                    <h2 className="text-center text-md-left highlight">Work experience</h2>
+                    <h2 className="size-200 text-center text-md-left highlight">
+                      Work experience
+                    </h2>
 
                     {
                       loading && <p>Loading...</p>
@@ -276,11 +294,18 @@ const Home = () => {
                       && workExp.length
                       && workExp.slice(0, 3).map((experience) => (
                         <div key={experience.id} className={clsx(classes.Work, 'my-4')}>
-                          <h3 className="text-center text-md-left">{experience.position}</h3>
-                          <h4 className="text-center text-md-left">{experience.name}</h4>
+                          <h3 className="size-150 text-center text-md-left">
+                            {experience.position}
+                          </h3>
+
+                          <h4 className="size-125 text-center text-md-left">
+                            {experience.name}
+                          </h4>
+
                           <p className="m-0 text-center text-md-left">
                             {`${experience.location}`}
                           </p>
+
                           <p className="text-center text-md-left">
                             {
                               `(${moment(experience.start_date).format('YYYY/MM')} - `
@@ -290,6 +315,7 @@ const Home = () => {
                               })`
                             }
                           </p>
+
                           <ul className="pl-4">
                             {
                               experience.description.split('\n').map((value, index) => (
@@ -313,7 +339,7 @@ const Home = () => {
 
             <div className={clsx(classes.Projects, 'mt-5')}>
               <Container className="py-5">
-                <h2 className="highlight-variation text-center">
+                <h2 className="size-200 highlight-variation text-center">
                   Check out some of my most recent projects
                 </h2>
 
@@ -321,9 +347,9 @@ const Home = () => {
                   {
                     !loading && (!latestProjects || !latestProjects.length) && (
                       <Col>
-                        <h3 className="white text-center">
+                        <p className="title size-150 white text-center">
                           Apparently there are no projects published :(
-                        </h3>
+                        </p>
                       </Col>
                     )
                   }
@@ -366,7 +392,7 @@ const Home = () => {
             {
               (!loading && latestPosts?.length > 0) && (
                 <Container className={clsx(classes.Blog, 'py-5')}>
-                  <h2 className="text-center">My latest posts</h2>
+                  <h2 className="size-200 text-center">My latest posts</h2>
 
                   <Row className="mt-5 justify-content-center">
                     {/*
