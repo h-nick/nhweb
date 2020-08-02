@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faDev } from '@fortawesome/free-brands-svg-icons';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import { Navbar as BootstrapNavbar, Nav } from 'react-bootstrap';
 import classes from './component.module.scss';
@@ -47,6 +48,16 @@ const Navbar = () => (
       >
         <FontAwesomeIcon icon={faDev} />
       </a> */}
+
+      <a
+        href="https://codewars.com/users/hniklass"
+        className="white mr-3"
+        target="_blank"
+        rel="noopener noreferrer"
+        title="Link to Codewars"
+      >
+        <FontAwesomeIcon icon={faCode} />
+      </a>
     </Nav>
 
     <BootstrapNavbar.Toggle className={classes.Button} aria-controls="basic-BootstrapNavbar-nav" />
