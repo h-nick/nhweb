@@ -132,7 +132,7 @@ const Projects = () => {
           <Col sm={6}>
             <a
               className={clsx(classes.ContactBlock, 'hover-effect p-3 d-block')}
-              href="tel://+580000000000"
+              href="tel://+584249071142"
             >
               <div className={classes.Text}>
                 <h2 className="size-125">Whatsapp contact</h2>
@@ -144,7 +144,7 @@ const Projects = () => {
           <Col sm={6} className="mt-3 mt-sm-0">
             <a
               className={clsx(classes.ContactBlock, 'hover-effect p-3 d-block')}
-              href="https://t.me/telegramusername"
+              href="https://t.me/dhnik"
               target="_blank"
               rel="noopener noreferrer"
             >
