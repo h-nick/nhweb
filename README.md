@@ -11,5 +11,5 @@
 This repository holds the source code for [https://nicolashurtado.dev](https://nicolashurtado.dev)
 
 - **Made with React-Bootstrap**
-- **SSG by Next.js**
+- **SSG/SSR by Next.js**
 - **Powered by Strapi in Node.js**
