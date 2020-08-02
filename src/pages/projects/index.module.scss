@@ -5,6 +5,7 @@
   background: url('/images/projects_bg.jpg');
   background-size: cover;
   height: 100vh;
+  max-height: 1080px;
   position: relative;
 
   .Content {
@@ -31,6 +32,13 @@
 }
 
 .Button {
-  width: 40%;
   margin: auto;
+
+  @media (min-width: 380px) {
+    width: 80%;
+  }
+  
+  @media (min-width: 768px) {
+    width: 40%;
+  }
 }

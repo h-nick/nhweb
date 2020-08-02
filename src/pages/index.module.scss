@@ -3,7 +3,8 @@
 
 .Top {
   height: 100vh;
-  min-height: 600px;
+  //min-height: 600px;
+  max-height: 1080px;
   position: relative;
 
   .BgVideo {
@@ -67,8 +68,8 @@
     }
   
     .Image {
-      width: 250px;
-      height: 250px;
+      width: 200px;
+      height: 200px;
       justify-self: center;
       border: 3px solid $gold;
       border-radius: 50%;
