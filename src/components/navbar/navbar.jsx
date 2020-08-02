@@ -23,6 +23,7 @@ const Navbar = () => (
         className="white mr-3"
         target="_blank"
         rel="noopener noreferrer"
+        title="Link to GitHub"
       >
         <FontAwesomeIcon icon={faGithub} />
       </a>
@@ -32,6 +33,7 @@ const Navbar = () => (
         className="white mr-3"
         target="_blank"
         rel="noopener noreferrer"
+        title="Link to LinkedIn"
       >
         <FontAwesomeIcon icon={faLinkedin} />
       </a>
@@ -41,6 +43,7 @@ const Navbar = () => (
         className="white"
         target="_blank"
         rel="noopener noreferrer"
+        title="Link to DEV Community"
       >
         <FontAwesomeIcon icon={faDev} />
       </a> */}
