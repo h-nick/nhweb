@@ -1,13 +1,13 @@
+/* This is just a template for the actual ecosystem file. */
+
 module.exports = {
   apps: [
     {
-      name: 'NHWEB',
-      cwd: '/srv/www/nhweb',
-      script: 'npm',
-      args: 'start',
+      name: '.',
+      cwd: '.',
+      script: 'npx next start -p .',
       env: {
         NODE_ENV: 'production',
-        PORT: 3014,
       },
     },
   ],
