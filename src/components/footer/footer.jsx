@@ -30,20 +30,20 @@ const Footer = () => (
             </div>
 
             <div className={clsx(classes.Links, 'mb-0 mb-md-3 ml-3 ml-md-0')}>
-              <a
+              {/* <a
                 href="http://dev.to/hniklass"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="white"
               >
                 DEV.TO
-              </a>
+              </a> */}
 
               <a
                 href="https://github.com/hniklass"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="white ml-0 ml-md-3"
+                className="white"
               >
                 GITHUB
               </a>

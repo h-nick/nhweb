@@ -36,14 +36,14 @@ const Navbar = () => (
         <FontAwesomeIcon icon={faLinkedin} />
       </a>
 
-      <a
+      {/* <a
         href="http://dev.to/hniklass"
         className="white"
         target="_blank"
         rel="noopener noreferrer"
       >
         <FontAwesomeIcon icon={faDev} />
-      </a>
+      </a> */}
     </Nav>
 
     <BootstrapNavbar.Toggle className={classes.Button} aria-controls="basic-BootstrapNavbar-nav" />
