@@ -55,7 +55,7 @@ const Projects = () => {
 
       {
         <CSSTransition
-          timeout={1000}
+          timeout={300}
           in={loading}
           unmountOnExit
           classNames="loader-bg"
