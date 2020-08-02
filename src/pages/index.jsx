@@ -109,7 +109,7 @@ const Home = () => {
               <div className={classes.Cover} />
 
               <div className={classes.BgVideo}>
-                <video autoPlay muted loop>
+                <video autoPlay muted loop poster="/images/poster.jpg">
                   <source src="/videos/video.webm" type="video/webm" />
                   <source src="/videos/video.mp4" type="video/mp4" />
                 </video>
