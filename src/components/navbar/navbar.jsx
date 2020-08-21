@@ -2,7 +2,6 @@ import React from 'react';
 import clsx from 'clsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faDev } from '@fortawesome/free-brands-svg-icons';
-import { faCode } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import { Navbar as BootstrapNavbar, Nav } from 'react-bootstrap';
 import classes from './component.module.scss';
@@ -44,24 +43,15 @@ const Navbar = () => (
         </a>
 
         {/* <a
-        href="http://dev.to/hniklass"
-        className="white"
-        target="_blank"
-        rel="noopener noreferrer"
-        title="Link to DEV Community"
-      >
-        <FontAwesomeIcon icon={faDev} />
-      </a> */}
-
-        <a
-          href="https://codewars.com/users/hniklass"
-          className="white mr-3"
-          target="_blank"
-          rel="noopener noreferrer"
-          title="Link to Codewars"
-        >
-          <FontAwesomeIcon icon={faCode} />
-        </a>
+            href="http://dev.to/hniklass"
+            className="white"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Link to DEV Community"
+          >
+            <FontAwesomeIcon icon={faDev} />
+          </a>
+        */}
       </Nav>
 
       <BootstrapNavbar.Toggle

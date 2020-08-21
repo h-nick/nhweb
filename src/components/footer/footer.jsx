@@ -56,15 +56,6 @@ const Footer = () => (
               >
                 LINKEDIN
               </a>
-
-              <a
-                href="https://codewars.com/users/hniklass"
-                className="white ml-0 ml-md-3"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                CODEWARS
-              </a>
             </div>
           </div>
 
