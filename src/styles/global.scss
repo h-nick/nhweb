@@ -20,9 +20,14 @@
   }
 }
 
+.content {
+  max-width: 2048px;
+  margin: auto;
+}
+
 html, body {
   font-size: 90%;
-  max-width: 2048px;
+  //max-width: 2048px;
   margin: auto;
 
   @media (min-width: 450px) {

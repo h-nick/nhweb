@@ -4,7 +4,7 @@
 .Top {
   height: 100vh;
   //min-height: 600px;
-  max-height: 1080px;
+  max-height: 1400px;
   position: relative;
   background-color: $blue;
 
@@ -40,7 +40,8 @@
     position: absolute;
     z-index: 3;
     top: 55%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-grow: 1;
     flex-direction: column;

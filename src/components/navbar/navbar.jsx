@@ -13,33 +13,37 @@ import classes from './component.module.scss';
 */
 
 const Navbar = () => (
-  <BootstrapNavbar className={clsx(classes.Navbar, 'py-sm-2 justify-content-between')} expand="sm">
-    <BootstrapNavbar.Brand className={clsx(classes.Logo, 'p-0 m-0')} href="/">
-      <img src="/images/logo_white.png" alt="Logo" />
-    </BootstrapNavbar.Brand>
+  <div className={classes.Navbar}>
+    <BootstrapNavbar
+      className={clsx(classes.Content, 'py-sm-2 justify-content-between content')}
+      expand="sm"
+    >
+      <BootstrapNavbar.Brand className={clsx(classes.Logo, 'p-0 m-0')} href="/">
+        <img src="/images/logo_white.png" alt="Logo" />
+      </BootstrapNavbar.Brand>
 
-    <Nav className={clsx(classes.SocialNetworks, 'flex-row mr-auto')}>
-      <a
-        href="https://github.com/hniklass"
-        className="white mr-3"
-        target="_blank"
-        rel="noopener noreferrer"
-        title="Link to GitHub"
-      >
-        <FontAwesomeIcon icon={faGithub} />
-      </a>
+      <Nav className={clsx(classes.SocialNetworks, 'flex-row mr-auto')}>
+        <a
+          href="https://github.com/hniklass"
+          className="white mr-3"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Link to GitHub"
+        >
+          <FontAwesomeIcon icon={faGithub} />
+        </a>
 
-      <a
-        href="https://linkedin.com/in/nicolashd"
-        className="white mr-3"
-        target="_blank"
-        rel="noopener noreferrer"
-        title="Link to LinkedIn"
-      >
-        <FontAwesomeIcon icon={faLinkedin} />
-      </a>
+        <a
+          href="https://linkedin.com/in/nicolashd"
+          className="white mr-3"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Link to LinkedIn"
+        >
+          <FontAwesomeIcon icon={faLinkedin} />
+        </a>
 
-      {/* <a
+        {/* <a
         href="http://dev.to/hniklass"
         className="white"
         target="_blank"
@@ -49,27 +53,31 @@ const Navbar = () => (
         <FontAwesomeIcon icon={faDev} />
       </a> */}
 
-      <a
-        href="https://codewars.com/users/hniklass"
-        className="white mr-3"
-        target="_blank"
-        rel="noopener noreferrer"
-        title="Link to Codewars"
-      >
-        <FontAwesomeIcon icon={faCode} />
-      </a>
-    </Nav>
-
-    <BootstrapNavbar.Toggle className={classes.Button} aria-controls="basic-BootstrapNavbar-nav" />
-
-    <BootstrapNavbar.Collapse id="basic-BootstrapNavbar-nav">
-      <Nav className="pl-3 pl-sm-5 ml-sm-auto">
-        <Link href="/" passHref><Nav.Link className="mr-2">HOME</Nav.Link></Link>
-        <Link href="/projects" passHref><Nav.Link className="mr-2">PROJECTS</Nav.Link></Link>
-        <Link href="/contact" passHref><Nav.Link>CONTACT</Nav.Link></Link>
+        <a
+          href="https://codewars.com/users/hniklass"
+          className="white mr-3"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Link to Codewars"
+        >
+          <FontAwesomeIcon icon={faCode} />
+        </a>
       </Nav>
-    </BootstrapNavbar.Collapse>
-  </BootstrapNavbar>
+
+      <BootstrapNavbar.Toggle
+        className={classes.Button}
+        aria-controls="basic-BootstrapNavbar-nav"
+      />
+
+      <BootstrapNavbar.Collapse id="basic-BootstrapNavbar-nav">
+        <Nav className="pl-3 pl-sm-5 ml-sm-auto">
+          <Link href="/" passHref><Nav.Link className="mr-2">HOME</Nav.Link></Link>
+          <Link href="/projects" passHref><Nav.Link className="mr-2">PROJECTS</Nav.Link></Link>
+          <Link href="/contact" passHref><Nav.Link>CONTACT</Nav.Link></Link>
+        </Nav>
+      </BootstrapNavbar.Collapse>
+    </BootstrapNavbar>
+  </div>
 );
 
 export default Navbar;

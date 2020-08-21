@@ -115,7 +115,7 @@ const Home = () => {
                 </video>
               </div>
 
-              <div className={classes.ContentWrapper}>
+              <div className={clsx(classes.ContentWrapper, 'content')}>
                 <ImageLoader
                   src="/images/profile.jpg"
                   alt="Photo of myself"

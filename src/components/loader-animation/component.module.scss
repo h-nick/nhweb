@@ -13,6 +13,17 @@
   height: 14vmin;
   width: 14vmin;
 
+  @media (min-width: 3841px) {
+    display: none;
+  }
+
+  @media (min-width: 2048px) {
+    height: 10vmin;
+    width: 10vmin;
+    top: calc(50% - 5vmin);
+    left: calc(50% - 5vmin);
+  }
+
   &:before {
     content: "";
     animation: spin 3s infinite linear;
@@ -26,6 +37,11 @@
     position: absolute;
     top: 0;
     width: 10vmin;
+
+    @media (min-width: 2048px) {
+      width: 6vmin;
+      height: 6vmin;
+    }
   }
 
   &:after {
@@ -41,6 +57,14 @@
     position: absolute;
     top: 2vmin;
     width: 6vmin;
+
+    @media (min-width: 2048px) {
+      width: 1vmin;
+      height: 1vmin;
+      border: solid 1vmin transparent;
+      border-right-color: $gold;
+      border-top-color: $gold;
+    }
   }
 }
 

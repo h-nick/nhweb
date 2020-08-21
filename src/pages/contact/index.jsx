@@ -47,24 +47,23 @@ const Projects = () => {
 
         <div className={classes.Cover} />
 
-        <div className={classes.Content}>
-          <h1 className="white big-size d-none d-md-block mb-3">
-            Inquiries?
-          </h1>
-          <h1 className="white big-size d-none d-md-block mb-3">
-            Problems?
-          </h1>
-          <h1 className="white big-size">
-            <span className="highlight-variation big-size title">Contact</span>
-            {' '}
-            me today
-          </h1>
+        <div className={classes.ContentWrapper}>
+          <div className={clsx(classes.Content, 'content px-3')}>
+            <h1 className="white big-size d-none d-md-block mb-3 text-center">
+              Inquiries? Problems?
+            </h1>
+            <h1 className="white big-size text-center">
+              <span className="highlight-variation big-size title">Contact</span>
+              {' '}
+              me today
+            </h1>
+          </div>
         </div>
 
         <AnimatedChevron />
       </div>
 
-      <Container className="p-5 my-5" fluid>
+      <Container className="p-5 my-5 content" fluid>
         <Row className="px-xl-5">
           <Col md={4}>
             <div
